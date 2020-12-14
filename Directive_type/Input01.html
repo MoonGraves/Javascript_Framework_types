@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    
+  <body ng-app="inputExample">
+  <script>
+   angular.module('inputExample', [])
+     .controller('ExampleController', ['$scope', function($scope) {
+       $scope.user = {name: 'By Name', last: 'Somethng'};
+     }]);
+</script>
+<div ng-controller="ExampleController">
+  <form name="myForm">
+    <label>
+       User name:
+       <input type="text" name="userName" ng-model="user.name" required>
+    </label>
+    <div role="alert">
+      <span class="error" ng-show="myForm.userName.$error.required">
+       Required!</span>
+    </div>
+
+    <label>
+       Last name:
+       <input type="text" name="lastName" ng-model="user.last"
+       ng-minlength="3" ng-maxlength="10">
+    </label>
+
+    <div role="alert">
+      <span class="error" ng-show="myForm.lastName.$error.minlength">
+        Too short!</span>
+      <span class="error" ng-show="myForm.lastName.$error.maxlength">
+        Too long!</span>
+    </div>
+  </form>
+
+<hr>
+  <p>user = {{user}}</p><br/>
+
+</div>
+
+  </body>
+</html>
