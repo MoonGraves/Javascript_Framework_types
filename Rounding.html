@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>rounding systems</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body>
+
+<h2>Pyöristymis homma </h2>
+<p><b> 3.14159 26535 89793...</b> pälä pälä niin jatkuu</p>
+
+<div ng-app="FilteriEsim">
+  <script>
+  angular.module('FilteriEsim', [])
+    .controller('ControlliEsim', ['$scope', function($scope) 
+    {
+      $scope.val = ''; //user input
+    }]);
+</script>
+
+<div ng-controller="ControlliEsim">
+  <label>Enter the number here: <input ng-model='val'></label><br>
+
+  Oletus pyöristyminen: <span id='number-default'>{{val | number}}</span><br><br>
+
+  Ei pyöristämistä: <span>{{val | number:0}}</span><br><br>
+
+  Negatiivinen numero: <span>{{-val | number:4}}</span><br><br>
+
+  Uusi numero: <span>{{-val | number:8}}</span>
+</div>
+
+
+  </body>
+</html>
