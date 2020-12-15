@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Values</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+  </head>
+<body ng-app="RangeValues">
+  <script>
+  angular.module('RangeValues', [])
+    .controller('RangeController', ['$scope', function($scope) {
+      $scope.value = '';
+      $scope.min = 0;
+      $scope.max = 500;
+    }]);
+</script>
+
+
+<form name="myForm" ng-controller="RangeController">
+  <!--
+  Min: <input type="number" ng-model="min"><br>
+  Max: <input type="number" ng-model="max"><br><br>-->
+
+  Set Range of values: <input type="range" name="range" ng-model="value" min="{{min}}"  max="{{max}}"> <br>
+  <b>Or</b> Input the values: <input type="number" ng-model="value"><br><br>
+
+ Your input value is: <b>{{value}}</b><br/>
+  <!--
+  myForm.range.$valid = <code>{{myForm.range.$valid}}</code><br/>
+  myForm.range.$error = <code>{{myForm.range.$error}}</code>-->
+
+Show1: <input type="checkbox" ng-model="checked" aria-label="Toggle ngShow"><br />
+<div class="check-element animate-show-hide" ng-show="checked">
+  Pälä pälä {{value}} <br>
+
+  Dollar to euro {{ value }} * 0.82 = {{ value * 0.82 }} Usa dollars
+</div><br>
+
+Show2: <input type="checkbox" ng-model="check2" aria-label="Toggle ngShow"><br />
+<div class="check-element animate-show-hide" ng-show="check2">
+  Celsius: {{value}} 
+  To Fahrenheit *F:
+  <br> {{ value }} * 33.800 = {{ value * 33.800 }} *F
+</div><br>
+
+<div>
+Show3: <input type="checkbox" ng-model="chkselct"><br /><br/>
+<div style="padding:5px; border:1px solid black; width:30%;"
+ ng-show='chkselct'> <b> km to miles </b> <br> {{ value }} km * 1.609 = {{ value * 1.609 }} yards </div>
+</div>
+
+</form>
+    
+  </body>
+</html>
