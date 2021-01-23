@@ -1,0 +1,55 @@
+/*periaateessa tänne ne tulee kaikki ladatut siis install paketti tiedostot mitkä perustuu niin kuin npm kirjastot/documentit ja jne. toki voidaan poistaa sitä tiettyä olemassa ladattujen dokumentti. Jokaisen pakettilla on aina jokinlainen tietty toiminta
+
+-Täs on jos et tiedä mitä -- jälkeen voisit syöttää, niin kysymysmerkki antaa vinkkejä olemassa olevia asetuksia ja toimintoja, mitä voisit tehdä esim. tässä on luokitettu
+$ npm init --?
+
+npm init [--force|-f|--yes|-y|--scope]
+npm init <@scope> (same as `npx <@scope>/create`)
+npm init [<@scope>/]<name> (same as `npx [<@scope>/]create-<name>`)
+
+
+-tämä tarkoittaa kuin ladattaan olemassa olevan käynnistä olevan sovellus js sisäisen ladattujen paketin tiedostot, mitkä tulostuvat kuin json lista, tän sovellus nimi, versio, avainsanat ja pälä pälä json dokumentti
+$ npm -init --yes
+
+
+-JOS haluttaisi tarkistaa olemassa ladattun paketin version esim. express. yleensä versioissa menevät järjestyksessä eli [major.minor.patch]
+$ npm express -v
+6.14.6
+
+-Jokin ladattu paketti tiedoston POISTAMINEN esim:::
+$ npm uninstall <package_name>
+
+
+*/
+//1.esim)
+{
+  "name": "DarkConfusedMedia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+//2.esim)
+{
+  "name": "DarkConfusedMedia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
