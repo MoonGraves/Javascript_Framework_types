@@ -1,0 +1,16 @@
+{
+  "file": "users",
+  "name": "UserName",
+  "Age": "18",
+  "country": "Finland",
+  "city": "Vantaa",
+  "work": {
+    "school": "University",
+    "subject": "engineer"
+  },
+  "hobby": {
+    "gym": "Full body",
+    "drama": "CIA",
+    "music": "Rock band"
+  }
+}
