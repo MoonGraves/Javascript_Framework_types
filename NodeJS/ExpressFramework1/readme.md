@@ -2,5 +2,5 @@ Käynnistäessä sovelluksen urliin loppu osaan voidaan tallentaa tämmöinen js
 Tässä sisältyy express http requests, router parametriä ja query stringiä.
 
 
-![Alt text](Node1.PNG?raw=true "None")
-![Alt text](Node2.PNG?raw=true "None")
+![Alt text](images/Node1.PNG?raw=true "None")
+![Alt text](images/Node2.PNG?raw=true "None")
