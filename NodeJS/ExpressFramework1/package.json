@@ -1,0 +1,17 @@
+{
+  "name": "DarkConfusedMedia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
