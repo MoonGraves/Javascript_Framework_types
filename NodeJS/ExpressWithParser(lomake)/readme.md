@@ -1,0 +1,6 @@
+Tässä luodaan tämmöinen kuin lomake täyttäminen, mikä perustuu edellisen toi kansion (ExpressWithParse), samat toiminta ja koodi pätkä, 
+vain lisätty muutama uutta ja tuttuja asioita siihen. Lomakkeen täyttämiseessä perus etu- ja sukunimi, syntymäpv & email ja salasana.
+
+voi toki syöttää leikkisti vale tiedotteen sinne kuin pieni testi ja mikä täydentyy kohti json tiedostona, 
+että tallentuu oman kansioon siihhen tiettyn polkuun ja muihin tiedostojen kanssa
+
