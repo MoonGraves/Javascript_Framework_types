@@ -37,7 +37,7 @@ aikaNyt.toJSON();
 var aikaJson = JSON.stringify({'now': aikaNyt});
 console.log(aikaJson);
 
-//sovelluksen toiminta ja tms & lukaisee http indeksi.html
+//sovelluksen toiminta ja tms & lukaisee http indeksi.html ja kirjoittaa user1.json tiedostoon
 app.post('/', (req, res) => {
     console.log("Lomake ;  " + JSON.stringify(req.body, null, 2));
     // databse work here, give email & password
