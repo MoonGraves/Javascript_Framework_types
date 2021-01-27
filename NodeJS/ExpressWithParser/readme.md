@@ -13,3 +13,6 @@ Melkoinen toinen toiminta kuin edellisen kansion (ExpressFramework1) - mutta tä
 viimeisenä funktiona, että tunnistaa html body sisäisen asiansa mitä se kuin lähettää submit juttuja, että lukaisee niiitä argumenttejä
 
 urlencoded express false, jonka avulla voimme jäsentää URL-koodatut lomakkeet 
+
+![Alt text](images/Node1.PNG?raw=true "None")
+![Alt text](images/Node2.PNG?raw=true "None")
