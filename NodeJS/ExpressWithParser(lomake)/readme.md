@@ -18,3 +18,13 @@ url polkuun localhost/ping - sivustoon näkyy se viimeisin lomake mitä käyttä
 ![Alt text](images/Nodejs2.PNG?raw=true "None")
 ![Alt text](images/Nodejs3.PNG?raw=true "None")
 ![Alt text](images/Nodejs4.PNG?raw=true "None")
+
+_______________________________________________
+Sama toiminta jatkuu kuin ylempi kuvat esitettyinä, vain joka kerta kun käyttäjä aktivoi sovelluksen toimintaa ja täydentää lomakkeen, lähettää ne eteenpäin tiedosto tallentuvat.
+tallennuksessa tiedoston nimi on erilainen, se muodostaa --> user_pvKkVvv.Aika_ihmeTunnus.json & saman aikaisesti konsoli/cmd näkyy se tunnus id
+
+![Alt text](images/NodeJs1.PNG?raw=true "None")
+![Alt text](images/NodeJs2.PNG?raw=true "None")
+![Alt text](images/NodeJs3.PNG?raw=true "None")
+![Alt text](images/NodeJs4.PNG?raw=true "None")
+![Alt text](images/NodeJs5.PNG?raw=true "None")
