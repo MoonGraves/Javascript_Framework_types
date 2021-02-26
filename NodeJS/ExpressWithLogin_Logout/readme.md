@@ -7,6 +7,8 @@ Rekisteri:ssä luo vaan perus tunnus ja konsoli/cmd toistaa sen saman, mutta sal
 Kirjauduttua sisään eli täsmää email ja sposti, jossa on Logout - nappi eli kirjautua ulos. Kirjautumisen ulos - tyhjentää/reset alkuperäisen luoneen tunnuksen (sposti + salasana)
 Niin kauan se pysyy olemaan, kunnes käyttäjä kirjautuu ulos niin se luoneen tunnus poistuu
 
+Sekä pientä editointia eli css kanssa, mitä näkee kuvistakin. Mutta nodejs kanssa tulee olemaan polku methodi/funktio, jotta se tunnistaa luoneen kansion
+
 ![Alt text](Image/Node1.PNG?raw=true "None")
 ![Alt text](Image/Node2.PNG?raw=true "None")
 ![Alt text](Image/Node2-1.PNG?raw=true "None")
