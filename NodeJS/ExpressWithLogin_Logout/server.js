@@ -39,7 +39,8 @@ app.use(passport.initialize())
 app.use(passport.session())
 app.use(methodOverride('_method'))
 
-//Static files & lukaisee muu kansion ja nimen
+//Static files & lukaisee kansion nimen ja muu polkun
+//css stylesheet editointia html:n kanssa
 app.use(express.static('public'));
 app.use('/css', express.static((__dirname + 'public/css'))); //stylecheet css
 app.use('/js', express.static((__dirname + 'public/js'))); //javascript
