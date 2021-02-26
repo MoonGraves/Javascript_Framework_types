@@ -1,0 +1,23 @@
+<!-- Sisään kirjauduttu kotisivu -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HomePage</title>
+    <link href="css/style_index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <h1>Welcome <h1>
+  <h2>Hi <%= name %> </h2>
+
+  <form action="/logout?_method=DELETE" method="POST">
+    <button type="submit">Log Out</button>
+  </form>
+
+<br><br>
+  <br>
+  <img src="/img/sieppaakari.PNG" alt="comics" width="550" height="500" >
+
+</body>
+</html>

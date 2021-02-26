@@ -1,0 +1,13 @@
+h1 {
+  color: rgb(102, 20, 119);
+  text-align: center;
+}
+
+body {
+  background:lightgray;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
