@@ -9,52 +9,81 @@
     
   </head>
   <body>
-    <h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-    <script src="public/script.js"></script>
+
+  <em> <h1>This is a Heading</h1> </em>
+  <b><p>This is a paragraph.</p></b>
 
 <!-- Formatti lomakkeen täyttäminen & ja samassa group:pissa -->
 <div class="row">
-        <div class="col-lg-4"></div>
+    <div class="col-lg-4"></div>
         <div class="col-lg-4">
             <form action="/" method="POST" id="form">
 
-            <!-- Etunimi-->
-              <div class="form-group">
-                <label for="firstName">Etunimi:</label>
-                <input type="text" class="form-control" name="firstName">
-              </div>
+        <!-- Etu- ja sukunimi-->
+        <div class="form-group">
+           <label for="firstName">Etunimi:</label>
+           <input type="text" class="form-control" name="firstName">
+         
+          <label for="lastName">Sukunimi:</label>
+          <input type="text" class="form-control" name="lastName">
+        </div><br>
 
-              <!-- Sukunimi-->
-              <div class="form-group">
-                <label for="lastName">Sukunimi:</label>
-                <input type="text" class="form-control" name="lastName">
-              </div><br>
+        <!-- Gender -->
+        <div class="form-group">
+         <span class="userGender">Your Gender:</span>
+         <fieldset id="setA">
+         <input id="setA_male" type="checkbox" name="genderRadio" value="Male" >
+            <label for="setA_male">Male</label>
 
-              <!-- pv.kk.vvvv -->
-              <div class="form-group">
-              <label for="birthday">Birthday:</label>
-              <input type="date" id="birthday" name="birthday">
-              </div><br>
+         <input id="setA_female" type="checkbox" name="genderRadio" value="Female">
+            <label for="setA_female">Female</label>
+
+        <input id="setA_NonHuman" type="checkbox" name="genderRadio" value="Ghost">
+            <label for="setA_NonHuman">Ghost</label>
+         </fieldset>
+        </div>  
+
+       <!-- pv.kk.vvvv -->
+       <div class="form-group">
+         <label for="birthday">Birthday:</label>
+         <input type="date" id="birthday" name="birthday">
+        </div><br>
                           
-            <!-- Sposti-->
-              <div class="form-group">
-                <label for="email">Email address:</label>
-                <input type="email" class="form-control" name="email">
-              </div>
-
-              <!--Salasana -->
-              <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" name="password">
-              </div>
-
-              <!--Button nappi -->
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
+        <!-- Sposti-->
+        <div class="form-group">
+           <label for="email">Email address:</label>
+           <input type="email" class="form-control" name="email">
         </div>
-        <div class="col-lg-4"></div>
-      </div> 
+
+        <!--Salasana -->
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" name="password">
+         </div>
+
+        <!-- lomake/muu tiedosto -->
+        <br>
+        <div class="form-group">
+           <input type="file" name="file"/>
+        </div><br>
+
+        <div class="form-group">
+        <form action="/action_page.php">
+        <label for="textArea">Viesti:</label><br>
+        <textarea id="textViesti" onfocus="this.value=''" value="Clear" name="textArea" rows="4" cols="50"> Näppytä tänne jotakin
+          </textarea>
+          
+          <!-- Button nappi -->
+          <input type="submit" value="Lähetä"><br>
+        </form>
+        </div>
+
+        <!--Button nappi -->
+          <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+       </form>
+       </div>
+     <div class="col-lg-4"></div>
+  </div> 
 
 <!--Jquery scripti -->
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
