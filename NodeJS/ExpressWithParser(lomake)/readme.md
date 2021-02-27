@@ -13,6 +13,7 @@ että cmd/konsolissa näkyy se viesti mikä käyttäjä on näppytännyt
 
 ![Alt text](images/NodeJs1.PNG?raw=true "None")
 ![Alt text](images/NodeJs2.PNG?raw=true "None")
-![Alt text](images/NodeJs2-1.PNG.PNG?raw=true "None")
-![Alt text](images/NodeJs2-2.PNG.PNG?raw=true "None")
-![Alt text](images/NodeJs2-3.PNG.PNG?raw=true "None")
+![Alt text](images/NodeJs2-1.PNG?raw=true "None")
+![Alt text](images/NodeJs2-2.PNG?raw=true "None")
+![Alt text](images/NodeJs2-3.PNG?raw=true "None")
+
