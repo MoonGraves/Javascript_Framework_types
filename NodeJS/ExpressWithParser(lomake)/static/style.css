@@ -3,7 +3,18 @@ h1 {
   text-align: center;
 }
 
+body {
+  background: #d9cfe8;
+}
+
 p {
   font-family: verdana;
   font-size: 20px;
+}
+
+/*Gender box */
+fieldset {
+	width: 275px;
+	margin-bottom: 20px;
+	margin-top: 10px;
 }
