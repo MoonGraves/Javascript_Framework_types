@@ -22,3 +22,4 @@ esim. lomake täydentyy samaaan .txt ja erilisenä oma .json, jos yhtäkkiä tä
 ![Alt text](images/NodeJs3.PNG?raw=true "None")
 ![Alt text](images/NodeJs5.PNG?raw=true "None")
 ![Alt text](images/NodeJs5-1.PNG?raw=true "None")
+![Alt text](images/NodeJs4.PNG?raw=true "None")
