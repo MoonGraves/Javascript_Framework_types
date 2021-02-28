@@ -20,6 +20,8 @@ const bodyParser = require('body-parser');
 const app = express();
 const fileUpload = require('express-fileupload')
 
+const members = require('./Members'); //lukaisee olemassa olevan tiedosto polkun
+
 const fs = require('fs');
 
 //Lukaisee jos tällainen tiedosto on olemassa
@@ -47,14 +49,19 @@ app.use(bodyParser.json());
 //Static files & lukaisee muu kansion ja nimen
 app.use('/js', express.static((__dirname + 'static/js'))); //javascript
 
-
-
+//Kotisivu
 app.get('/', (req,res)=> {
   //res.send('Ihme maailma');
   res.sendFile(path.join(__dirname, 'static' , '/index.html'));
   console.log("running server port 8000");
   console.log("this is homepage");
 });
+
+//Toinen polku sivusto
+app.get('/about', (req,res)=> {
+  res.sendFile(path.join(__dirname, 'static' , '/about.html'));
+  console.log("About");
+}); 
 
 ///sama url vain toinen polkku & tulostaa olemassa olevan json tiedoston, tai suoraan aluksi lukaisee, että onko tällainen tiedosto olemassa
 app.get('/ping', (req,res)=> {
@@ -63,6 +70,20 @@ app.get('/ping', (req,res)=> {
   res.sendFile(path.join(__dirname, 'user1.json'));
   console.log("pingpong");
 });
+
+//Lukaisee luoneen json formaatin & nappaa kaikki henkilöt (kaks vaihtoehto toimivat)
+// 1)::
+/*
+app.get('/api/members', (req,res) => {
+  //res.json(members);
+  res.end(JSON.stringify(members));
+  console.log("JSON members");
+});*/
+
+// 2):: localhost:8080/api/memmbers
+app.get('/api/members', (req,res) => {
+  res.json(members)}
+);
 
 //joka kerta kun käyttäjä syöttää polkuu loppuosan eli /done, niin se kuin avaisi toisen sivuston, vain määritetty olemassa oleva linkki. esim html; kun klikkaat sitä sinistä tekstin-osoittavaa polkua niin se avaa toisen url sivuston
 /*
@@ -73,6 +94,7 @@ app.get('/done', (req,res)=> {
 });
 */
 
+//////////////////////////////////////////////////////////////////////////////
 //Create random password & muu homma
 var generator = require('generate-password');
 var passWord = generator.generate({
