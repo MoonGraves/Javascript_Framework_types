@@ -1,0 +1,64 @@
+// Importing node.js file system, crypto module 
+const fs = require('fs') 
+const crypto = require('crypto') 
+
+class Repository { 
+
+constructor(filename) { 
+	
+	// Filename where datas are going to store 
+	if(!filename) { 
+	throw new Error( 
+'Filename is required to create a datastore!') 
+	} 
+
+	this.filename = filename 
+
+	try { 
+	fs.accessSync(this.filename) 
+	} catch (err) { 
+
+	// If file not exist 
+	// it is created with empty array 
+	fs.writeFileSync(this.filename, '[]') 
+	} 
+} 
+
+// Logic to add data or record 
+async createNewRecord(attributes) { 
+	
+	// Assign unique Id to each record 
+	attributes.id = this.generateUniqueID() 
+
+	// Read filecontents of the datastore 
+	const jsonRecords = await 
+	fs.promises.readFile(this.filename, { 
+	encoding : 'utf8'
+	}) 
+
+	// Parsing JSON records in JavaScript 
+	// object type records 
+	const objRecord = JSON.parse(jsonRecords) 
+
+	// Adding new record 
+	objRecord.push(attributes) 
+
+	// Writing all records back to the file 
+	await fs.promises.writeFile( 
+	this.filename, 
+	JSON.stringify(objRecord, null, 2) 
+	) 
+
+	return attributes; 
+} 
+
+// Method to generate unique ID 
+generateUniqueID() { 
+	return crypto.randomBytes(5).toString('hex') 
+} 
+} 
+
+// The 'datastore.json' file created at runtime 
+// and all the information provided via signup 
+// form store in this file in JSON format. 
+module.exports = new Repository('datastore.json') 
