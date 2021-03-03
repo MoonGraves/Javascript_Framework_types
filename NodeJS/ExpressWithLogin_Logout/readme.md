@@ -9,6 +9,8 @@ Niin kauan se pysyy olemaan, kunnes käyttäjä kirjautuu ulos niin se luoneen t
 
 Sekä pientä editointia eli css kanssa, mitä näkee kuvistakin. Mutta nodejs kanssa tulee olemaan polku methodi/funktio, jotta se tunnistaa luoneen kansion
 
+Authentication - systeemi eli kuin varsinainen sisään kirjautumisen asetukset 
+
 ![Alt text](Image/Node1.PNG?raw=true "None")
 ![Alt text](Image/Node2.PNG?raw=true "None")
 ![Alt text](Image/Node2-1.PNG?raw=true "None")
