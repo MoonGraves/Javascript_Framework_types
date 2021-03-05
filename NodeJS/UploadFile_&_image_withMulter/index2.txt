@@ -1,6 +1,8 @@
 /*
 npm install --save express ejs multer
 sudo npm install -g nodemon (linux) >> npm install nodemon
+
+//Voidaan upottaa mitäkin tiedostoa, ei ole rajoitusta mikä tiedoston tyyppi oiskin json, txt, png, jpg, jpeg ja jne~~ 
 */
 
 const express = require('express');
