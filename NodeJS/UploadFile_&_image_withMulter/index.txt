@@ -2,6 +2,9 @@
 //Nodejs upload image file with Multer
 npm install --save express ejs multer
 sudo npm install -g nodemon (linux) >> npm install nodemon
+
+//Lukaisee vain rajoitettu tiedoston tyyppit, vain kuva tiedostot eli jpg, jpeg, png ja gif tyyppit
+
 */
 
 const express = require('express');
