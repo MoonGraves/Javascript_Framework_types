@@ -1,0 +1,102 @@
+/*
+//Nodejs upload image file with Multer
+npm install --save express ejs multer
+sudo npm install -g nodemon (linux) >> npm install nodemon
+*/
+
+const express = require('express');
+const multer = require('multer');
+const ejs = require('ejs');
+const path = require('path');
+
+//set storage engine 
+const storage = multer.diskStorage({
+  destination: './public/uploads',
+  filename: function(req, file, cb){
+    cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname)); 
+    //path.extname(file.originalname) lukaisee tiedoston nimen mukaan vaik oiskin jpg, jpeg, png ja jne.. & tiedoston upottaminen ja nimeäminen muuttuu kokonaisuudessaan, mut tiedoston tyyppi ei muuttu
+  }
+});
+
+//upload variable 
+const upload = multer({
+  storage: storage,
+  limits: {fileSize: 1000000}, //lukaisee tiedoston bittineinä (bytes) & esim. jos tiedosto ylittää tän rajan ilmoitus tulee (file too large)
+  fileFilter: function (req, file, cb) {
+    checkFileType(file, cb);
+  }
+}).single('myImage');
+
+//check file type 
+function checkFileType(file, cb) {
+  //file extension & allowed extenstion & vain tietyt tiedostot voidaan upottaa
+  const filetypes = /jpg|jpeg|png|gif/;
+
+  //check extension
+  const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
+
+  //check mime (tiedosto tyyppi esim. txt on 'text/plain' & json on 'application/json' ja jne )
+  const mimetype = filetypes.test(file.mimetype);
+
+  if(mimetype && extname) {
+    return cb(null, true );
+  } else {
+    cb('Error: image Only!');
+  }
+}
+
+
+//init app
+const app = express();
+
+//EJS 
+app.set('view engine', 'ejs');
+
+//static folder & public
+app.use(express.static('./public'));
+
+//
+app.get('/', (req, res) => res.render('index'));
+
+app.post('/upload', (req, res) => {
+  upload(req, res, (err) => {
+
+    if(err) {
+        res.render('index', {
+          msg : err
+        });
+    } else {
+      console.log(req.file);
+      //res.send('test');
+      /* esim upotettu ihan mikä vain satunainen kuva, josta saa ilmoituksen muutoksesta & destination tarkoittaa tiettyyn polkuun, että tänne sovellukseen upottuu niitä tietodstoja & filename missä lukee myImage - tarkoittaa :: 
+      {
+      fieldname: 'myImage',
+      originalname: 'sieppaaakkari.PNG',
+      encoding: '7bit',
+      mimetype: 'image/png',
+      destination: './public/uploads',
+      filename: 'myImage-1614952948784.PNG',
+      path: 'public/uploads/myImage-1614952948784.PNG',
+      size: 193609
+      }
+      */
+
+      //tiedoston upottus jos yhtäkkiä käyttäjä ei ole viel upottannut mitään
+      if(req.file == undefined) {
+        res.render('index', {
+        msg : 'Error: no file selected'
+        });
+      } else {
+        res.render('index', {
+          msg : 'File uploaded',
+          file: `uploads/${req.file.filename}`
+        });
+      }
+    } //else ENDS HERE
+
+  });
+});
+
+const port = 8080;
+
+app.listen(port, () => console.log(`server running ${port}`));
