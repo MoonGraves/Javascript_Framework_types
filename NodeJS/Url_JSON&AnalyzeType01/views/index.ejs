@@ -1,0 +1,63 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>EMPTY</title>
+    </head>
+<body>
+
+<h1>Blah blah</h1>
+<p>My first paragraph.</p>
+
+
+<p> latitude: <span id="lat"></span><br>
+    long: <span id="lon"></span>
+</p>
+
+
+<a href="about.ejs">About</a>
+
+<script>
+    const api_urli = "https://rata.digitraffic.fi/api/v1/train-locations/latest/"
+    const api_url = "https://api.wheretheiss.at/v1/satellites/25544"
+
+    async function getISS() {
+      //Eka Api
+      const response = await fetch(api_url);
+      const data = await response.json();
+      const { latitude, longitude } = data;
+
+      document.getElementById('lat').textContent = latitude;
+      document.getElementById('lon').textContent = longitude;
+
+      //Toinen esim.
+      const toinenData = await (await fetch(api_urli)).json();
+
+      console.log(data);
+      console.log(toinenData);
+    }
+    
+    getISS();
+</script>
+
+<script> 
+  //fetch('https://reqres.in/api/users', {
+  fetch('https://reqres.in/api/users', {
+  method: 'POST',
+  headers: {
+  'Content-Type': 'application/json'
+  },
+  
+  body: JSON.stringify({
+    name: 'User 2'
+  })
+}).then(res => {
+    return res.json()
+})
+  .then(data => console.log(data))
+  .catch(error => console.log('Syntax error'))
+
+  </script>
+
+
+</body>
+</html>
