@@ -8,6 +8,8 @@ Kaikenlaista pyyntö asioita mm. tiedoston muutos/päivitys ja julkaisua. Esim. 
 
 Tässä on luottu yksi random js tiedoston objekti asianssa eli id, nimi, email ja jne~~ , mitä löytyy sivustolta kuin: https://www.mockaroo.com/
 
+Lisäksi toiminassa PUT & DELETE & muu pyyntö (request) testattu postman sivustossa, missä editoittaan sitä luotua parser js sisäisen tiedostoa
+
 ![Alt text](images/nodejs1.PNG?raw=true "None")
 ![Alt text](images/nodejs2.PNG?raw=true "None")
 ![Alt text](images/nodejs3.PNG?raw=true "None")
