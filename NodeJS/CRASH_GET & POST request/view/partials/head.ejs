@@ -1,8 +1,108 @@
-  <head>
+<head>
   <meta charset="UTF-8">
     <title>Home | <%= title %></title>
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
-  
-  <!-- <link rel="stylesheet" href="/style.css"/>
-  -->
-    </head>
+
+<style>
+  <link rel="stylesheet" href="/style.css"/>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+    body{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: "Times New Roman", Times, serif; 
+    /*lisää font tyyppiä https://fonts.google.com/*/
+    }
+
+    p, h1, h2, h3, h4, h5, a, ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #222;
+    }
+
+    /*nav & footer styles */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    nav li {
+      list-style-type: none;
+      margin-left: 20px;
+    }
+    nav h1 {
+      font-size: 3em;
+    }
+
+    nav p, nav a {
+      color: #777;
+      font-weight: 300;
+    }
+
+    footer {
+      color: #777;
+      text-align: center;
+      margin: 80px; auto 20px;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      text-transform: capitalize;
+      margin-bottom: 8px;
+    }
+
+    .content{
+      margin-left: 20px;
+    }
+
+    /* index, details & create styles page START HERE::::*/
+    .create-blog form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    .create-blog input,
+    .create-blog textarea{
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 8px;
+    }
+
+    .create-blog label {
+      display: block;
+      margin-top: 20px;
+    }
+
+    textarea{
+      height: 120px;
+    }
+    
+    .create-blog button {
+      margin-top: 20px;
+      background: #ff8b26; 
+      color: white;
+      padding: 6px;
+      border: 0;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+      /* index, details & create styles page ENDS HERE::::*/
+
+  </style>
+</head>
