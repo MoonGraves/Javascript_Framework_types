@@ -22,14 +22,20 @@
     color: #222;
     }
 
-    /*nav & footer styles */
+    /*nav-bar & footer styles */
     nav {
       display: flex;
+      background: #d7dbd8;
       justify-content: space-between;
       margin-bottom: 60px;
       padding-bottom: 10px;
       border-bottom: 1px solid #ddd;
       text-transform: uppercase;
+    }
+
+    nav:hover {
+      background-color: #ddd;
+      color: #fff;
     }
 
     nav ul {
@@ -106,6 +112,29 @@
       cursor: pointer;
     }
       /* index, details & create styles page ENDS HERE::::*/
+
+  /*Toinen footer */
+  .footer-dark ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .footer-dark ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.6;
+  }
+
+  .footer-dark ul a:hover {
+    opacity: 0.8;
+  }
+
+  .footer-dark .item.text {
+  margin-bottom: 36px;
+  }
 
   </style>
 </head>
