@@ -1,19 +1,36 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-  <head>
-    <title>EMPTY</title>
-    </head>
+<!--Sama kuin nav -->
+<%- include('./partials/head.ejs')%>
 <body>
 
-<h1>About something</h1>
-<p>Blah blah about</p>
+<h1>Blah blah</h1>
+<p>My first paragraph.</p>
 
-<a href="index.ejs">Home</a>
+<!--Tän nav missä voi voidaan avata muita sivustoja eli ahref about, blog ja jne -->
+<%- include('./partials/nav.ejs')%>
 
   <form action="/about" method="POST"><br>
     <input type="text" name="information">Syötä jotakin: </input>
     <input type="submit"/>
   </form>
 
+<br>
+  <div class="blogs content">
+    <h2>Blah bloggit</h2>
+    
+    <% if (blogs.length > 0) { %>
+      <% blogs.forEach(blog => { %>
+
+        <h3 class="title"><%= blog.title%></h3>
+        <p class="snippet"><%= blog.snippet%></p>
+
+      <% }) %>
+    <% } else { %>
+      <p> No blog display...</p>
+      <% } %>
+  </div>
+
+      <%- include('./partials/footer.ejs')%>
 </body>
 </html>
