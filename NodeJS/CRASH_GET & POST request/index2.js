@@ -143,11 +143,6 @@ app.get('/blog', (req, res) => {
   console.log("blog");
 });
 
-app.get('/blog/create', (req, res) => {
-  //res.send('Ihme maailma');
-  res.render('blog', {title: 'Bloggi'}) //home kotisivu on vain välilehden palkki editoitu & siks siel titlessä lukee <%= title %>
-});
-
 //404 page joka kerta, kun syötettään väärään http polkuun ja muu sivustoon, oletus error sivusto & sama homma tää jopa estää json tiedoston lukemista, normaalisti voittaisi näyttää sen
 app.use((req, res) => {
   res.status(404).render('404', {title: 'Error'} );
