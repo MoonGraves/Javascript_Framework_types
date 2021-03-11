@@ -143,11 +143,6 @@ app.get('/blog', (req, res) => {
   console.log("blog");
 });
 
-app.get('/blog/create', (req, res) => {
-  //res.send('Ihme maailma');
-  res.render('blog', {title: 'Bloggi'}) //home kotisivu on vain välilehden palkki editoitu & siks siel titlessä lukee <%= title %>
-});
-
 //------------------------------------------------------------------------
 
 //Lukaisee create.ejs formaattin toiminnan blogs
