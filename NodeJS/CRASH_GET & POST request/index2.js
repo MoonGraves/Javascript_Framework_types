@@ -27,6 +27,7 @@ app.use(express.json())
 
 app.use(morgan('short')) //mittaa / analysoi, että kuinka kauan käyttäjältä menee aika johonkin polku sivustoon vaik olisikin kotisivu, about, muu ja jne. Muita valintoja on mm. combined, common, dev, short & tiny
 
+
 app.use(bodyParser.urlencoded({extended: true}));
 
 const id_luku = crypto.randomBytes(5).toString("hex"); //luodaan random id tunnus vastaava
@@ -46,7 +47,6 @@ muu toimivat protokollat & muu työkaluina (postman)
 VAIN>> put & delete
 
 */
-
 
 //Lukaisee kokonaisen json tiedoston & määritettynä url kautta
 /*https://www.youtube.com/watch?v=YCPiIrkkdUg
@@ -115,9 +115,16 @@ app.post('/', (req,res) => {
 //about 
 app.get('/about', (req, res) => {
   //res.send('Ihme maailma');
-  res.render('about', {title: 'About'}) //home kotisivu on vain välilehden palkki editoitu & siks siel titlessä lukee <%= title %>
+  
+  const blogs = [
+    {title: 'Asia 1 ', snippet: 'Lorem ipsum dolor sit amet'},
+    {title: 'Asia 2 ', snippet: 'Lorem ipsum dolor sit amet'},
+    {title: 'Asia 3 ', snippet: 'Lorem ipsum dolor sit amet'},
+  ];
 
   console.log("about");
+
+  res.render('about', {title: 'About', blogs}); //home kotisivu on vain välilehden palkki editoitu & siks siel titlessä lukee <%= title %>
 });
 
 //about ejs siel on box-missä käyttäjä syöttää jotakin, niin se <form> action pitää tunnistaa, että post niin kuin lähettää sen eteenpäin tai julkais
@@ -133,16 +140,34 @@ app.post('/about', (req, res) => {
 app.get('/blog', (req, res) => {
   //res.send('Ihme maailma');
   res.render('blog', {title: 'Bloggi'}) //home kotisivu on vain välilehden palkki editoitu & siks siel titlessä lukee <%= title %>
-
   console.log("blog");
 });
 
-//404 page joka kerta, kun syötettään väärään http polkuun ja muu sivustoon, oletus error sivusto & sama homma tää jopa estää json tiedoston lukemista, normaalisti voittaisi näyttää sen
+app.get('/blog/create', (req, res) => {
+  //res.send('Ihme maailma');
+  res.render('blog', {title: 'Bloggi'}) //home kotisivu on vain välilehden palkki editoitu & siks siel titlessä lukee <%= title %>
+});
 
+//404 page joka kerta, kun syötettään väärään http polkuun ja muu sivustoon, oletus error sivusto & sama homma tää jopa estää json tiedoston lukemista, normaalisti voittaisi näyttää sen
 app.use((req, res) => {
   res.status(404).render('404', {title: 'Error'} );
 });
 
+//------------------------------------------------------------------------
+
+//Lukaisee create.ejs formaattin toiminnan blogs
+app.post('/create', (req, res) => {
+  console.log(req.body); //lukaisee käyttäjä näppyttää sinne lomakkeseen jotakin
+
+});
+
+//create
+app.get('/create', (req, res) => {
+  //res.send('Ihme maailma');
+  res.render('create', {title: 'Luo'}) //home kotisivu on vain välilehden palkki editoitu & siks siel titlessä lukee <%= title %>
+
+  console.log("create");
+});
 
 //------------------------------------------------------------------------
 
@@ -169,7 +194,7 @@ app.get('/muu/:id', (req, res) => {
 });
 
 //------------------------------------------------------------------------
-//>>> TESTAUKSET KÄYTETTY SIVUSTOA POSTMAN - REPL.IT TÄSSÄ EI TOIMI VARSINAISESTI, MUUTEN TOIMII STSRT HERE::::: <<<
+//>>> TESTAUKSET KÄYTETTY SIVUSTOA POSTMAN - REPL.IT TÄSSÄ EI TOIMI VARSINAISESTI, MUUTEN TOIMII STSRT HERE::::: <<<<
 
 app.put('/muu/members/:id', (req, res) => {
    const found = nimiListat.some( nimiLista => nimiLista.id === parseInt(req.params.id ));
