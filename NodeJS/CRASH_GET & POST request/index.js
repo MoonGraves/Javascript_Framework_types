@@ -115,9 +115,16 @@ app.post('/', (req,res) => {
 //about 
 app.get('/about', (req, res) => {
   //res.send('Ihme maailma');
-  res.render('about', {title: 'About'}) //home kotisivu on vain välilehden palkki editoitu & siks siel titlessä lukee <%= title %>
+  
+  const blogs = [
+    {title: 'Asia 1 ', snippet: 'Lorem ipsum dolor sit amet'},
+    {title: 'Asia 2 ', snippet: 'Lorem ipsum dolor sit amet'},
+    {title: 'Asia 3 ', snippet: 'Lorem ipsum dolor sit amet'},
+  ];
 
   console.log("about");
+
+  res.render('about', {title: 'About', blogs}); //home kotisivu on vain välilehden palkki editoitu & siks siel titlessä lukee <%= title %>
 });
 
 //about ejs siel on box-missä käyttäjä syöttää jotakin, niin se <form> action pitää tunnistaa, että post niin kuin lähettää sen eteenpäin tai julkais
@@ -133,8 +140,28 @@ app.post('/about', (req, res) => {
 app.get('/blog', (req, res) => {
   //res.send('Ihme maailma');
   res.render('blog', {title: 'Bloggi'}) //home kotisivu on vain välilehden palkki editoitu & siks siel titlessä lukee <%= title %>
-
   console.log("blog");
+});
+
+app.get('/blog/create', (req, res) => {
+  //res.send('Ihme maailma');
+  res.render('blog', {title: 'Bloggi'}) //home kotisivu on vain välilehden palkki editoitu & siks siel titlessä lukee <%= title %>
+});
+
+//------------------------------------------------------------------------
+
+//Lukaisee create.ejs formaattin toiminnan blogs
+app.post('/create', (req, res) => {
+  console.log(req.body); //lukaisee käyttäjä näppyttää sinne lomakkeseen jotakin
+
+});
+
+//create
+app.get('/create', (req, res) => {
+  //res.send('Ihme maailma');
+  res.render('create', {title: 'Luo'}) //home kotisivu on vain välilehden palkki editoitu & siks siel titlessä lukee <%= title %>
+
+  console.log("create");
 });
 
 //------------------------------------------------------------------------
