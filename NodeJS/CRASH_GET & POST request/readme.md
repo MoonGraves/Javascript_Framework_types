@@ -11,7 +11,16 @@ Tässä on luottu yksi random js tiedoston objekti asianssa eli id, nimi, email 
 Lisäksi toiminassa PUT & DELETE & muu pyyntö (request) testattu postman sivustossa, missä editoittaan sitä luotua parser js sisäisen tiedostoa
 
 ![Alt text](images/nodejs1.PNG?raw=true "None")
+![Alt text](images/nodejs1-1.PNG?raw=true "None")
+![Alt text](images/nodejs1-2.PNG?raw=true "None")
+![Alt text](images/nodejs1-3.PNG?raw=true "None")
+![Alt text](images/nodejs1-4.PNG?raw=true "None")
+![Alt text](images/nodejs1-5.PNG?raw=true "None")
+![Alt text](images/nodejs1-6.PNG?raw=true "None")
+
 ![Alt text](images/nodejs2.PNG?raw=true "None")
+![Alt text](images/nodejs2-1.PNG?raw=true "None")
+
 ![Alt text](images/nodejs3.PNG?raw=true "None")
 ![Alt text](images/nodejs4.PNG?raw=true "None")
 ![Alt text](images/nodejs4-1.PNG?raw=true "None")
