@@ -5,25 +5,23 @@
 <body>
 
 <h1>Create blah</h1>
-<p>My first paragraph.</p>
 
 <!--Tän nav missä voi voidaan avata muita sivustoja eli ahref about, blog ja jne -->
 <%- include('./partials/nav.ejs')%>
 
-    <div class="create-blog content">
-      <form action/"blogs" method="POST">
-      <label for="title">Otsikko</label>
-      <input type="text" id="title" name="title" required/>
+<div class="create-blog content">
+  <form action="lomake" method="POST" id="contact-form">
+    <label for="title">Otsikko</label>
+    <input type="text" id="title" name="title">
 
-      <label for="snippet">Snippet:</label>
-      <input type="text" id="snippet" name="snippet" required/>
+    <label for="snippet">Snippet:</label>
+    <input type="text" id="snippet" name="snippet"required/>
 
-      <label for="body">Kirjoitus:</label>
-      <textarea id="body" required name="body"></textarea>
-      <button>Lähetä</button>
-      </form>
-    </div>
-
+    <label for="body">Kirjoitus:</label>
+    <textarea id="body" required name="body"></textarea>
+    <button onlick="submit">Lähetä</button>
+  </form>
+</div>
 
       <%- include('./partials/footer.ejs')%>
 </body>
