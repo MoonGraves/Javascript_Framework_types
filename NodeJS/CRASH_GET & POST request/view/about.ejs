@@ -4,16 +4,16 @@
 <%- include('./partials/head.ejs')%>
 <body>
 
-<h1>Blah blah</h1>
-<p>My first paragraph.</p>
+<h1>About blah</h1>
 
 <!--Tän nav missä voi voidaan avata muita sivustoja eli ahref about, blog ja jne -->
 <%- include('./partials/nav.ejs')%>
-
+<!--
   <form action="/about" method="POST"><br>
     <input type="text" name="information">Syötä jotakin: </input>
     <input type="submit"/>
-  </form>
+  </form>-->
+
 
 <br>
   <div class="blogs content">
@@ -30,6 +30,8 @@
       <p> No blog display...</p>
       <% } %>
   </div>
+
+
 
       <%- include('./partials/footer.ejs')%>
 </body>
