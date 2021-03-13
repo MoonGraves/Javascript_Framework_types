@@ -25,8 +25,8 @@ const nimiListat = require('./nimiData') //read file path
 const app = express();
 app.use(express.json())
 
-app.use(morgan('short')) //mittaa / analysoi, että kuinka kauan käyttäjältä menee aika johonkin polku sivustoon vaik olisikin kotisivu, about, muu ja jne. Muita valintoja on mm. combined, common, dev, short & tiny
-
+app.use(morgan('short')) //mittaa / analysoi, että kuinka kauan käyttäjältä menee aika johonkin polku sivustoon vaik olisikin kotisivu, about, muu ja jne. 
+//Muita valintoja on mm. combined, common, dev, short & tiny
 
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -81,6 +81,8 @@ app.set('view engine', 'ejs');
 //static folder & public
 app.use(express.static('./public'));
 
+//------------------------------------------------------------------------
+//TÄMÄ ON:: KOTISIVU OSUUS
 //Kotisivu index.ejs methodit
 app.get('/', function (req, res) {
   res.render('index', {title: 'Kotisivu'}) //home kotisivu on vain välilehden palkki editoitu & siks siel titlessä lukee <%= title %>
@@ -106,12 +108,11 @@ app.post('/', (req,res) => {
   nimiListat.push(uusnimiLista);
   res.json(nimiListat); // lisääntyy sinne json tiedostoon vain näkyvään olevaan http protokollaan, ei varsinaisesti LISÄÄNNY SINNE nimiData.JSON tiedostoon (kuin esikatselu)
   
-
   res.end(JSON.stringify(req.body));
 });
 
 //------------------------------------------------------------------------
-
+//TÄMÄ ON:: ABOUT OSUUS
 //about 
 app.get('/about', (req, res) => {
   //res.send('Ihme maailma');
@@ -130,12 +131,11 @@ app.get('/about', (req, res) => {
 //about ejs siel on box-missä käyttäjä syöttää jotakin, niin se <form> action pitää tunnistaa, että post niin kuin lähettää sen eteenpäin tai julkais
 app.post('/about', (req, res) => {
   //res.send('Ihme maailma'); 
-  res.end(JSON.stringify(req.body));
-  return 
+  res.end(JSON.stringify(req.body)); 
 });
 
 //------------------------------------------------------------------------
-
+//TÄMÄ ON:: BLOG OSUUS
 //blog 
 app.get('/blog', (req, res) => {
   //res.send('Ihme maailma');
@@ -143,12 +143,17 @@ app.get('/blog', (req, res) => {
   console.log("blog");
 });
 
+
 //------------------------------------------------------------------------
 
+//TÄMÄ ON:: CREATE OSUUS
 //Lukaisee create.ejs formaattin toiminnan blogs
-app.post('/create', (req, res) => {
-  console.log(req.body); //lukaisee käyttäjä näppyttää sinne lomakkeseen jotakin
+app.post('/lomake', (req, res) => {
+  console.log(req.body); //lukaisee käyttäjä näppyttää sinne lomakkeseen jotakin & form action mukaan!!
+});
 
+app.get('/lomake', function (req, res) {
+  res.render('contact', {qs: req.query})
 });
 
 //create
@@ -167,7 +172,7 @@ app.get('/muu', (req, res) => {
   res.end(JSON.stringify(nimiListat)); //toimii myös >> res.end(nimiListat);
   console.log("Nimilista");
 });
-
+ 
 //Get single member/name of the list & nimiListat << alussa mitä määritetty, että se lukee tiedoston polkun nii kuin nimen tai tekijänsä
 app.get('/muu/:id', (req, res) => {
   const found = nimiListat.some( nimiLista => nimiLista.id === parseInt(req.params.id ));
@@ -212,7 +217,6 @@ app.put('/muu/members/:id', (req, res) => {
       res.status(400).json({ msg: `No member with the id of ${req.params.id}` })
    }
 });
-
 
 //Tää toimii vain postman sivustossa, että valitsee toiminnan (delete) ja mitäkin id-tunnusta & muuten toimii
 //delete member & poistaa henkilöstö listasta id perusteella
