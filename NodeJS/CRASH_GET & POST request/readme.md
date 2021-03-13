@@ -15,14 +15,12 @@ Lisäksi toiminassa PUT & DELETE & muu pyyntö (request) testattu postman sivust
 ![Alt text](images/nodejs1-2.PNG?raw=true "None")
 ![Alt text](images/nodejs1-3.PNG?raw=true "None")
 ![Alt text](images/nodejs1-4.PNG?raw=true "None")
-![Alt text](images/nodejs1-5.PNG?raw=true "None")
-![Alt text](images/nodejs1-6.PNG?raw=true "None")
-
+![Alt text](images/nodejs1-5.png?raw=true "None")
+![Alt text](images/nodejs1-6.png?raw=true "None")
 ![Alt text](images/nodejs2.PNG?raw=true "None")
 ![Alt text](images/nodejs2-1.PNG?raw=true "None")
-
-![Alt text](images/nodejs3.PNG?raw=true "None")
-![Alt text](images/nodejs4.PNG?raw=true "None")
-![Alt text](images/nodejs4-1.PNG?raw=true "None")
-![Alt text](images/nodejs4-2.PNG?raw=true "None")
+![Alt text](images/nodejs3.png?raw=true "None")
+![Alt text](images/nodejs4.png?raw=true "None")
+![Alt text](images/nodejs4-1.png?raw=true "None")
+![Alt text](images/nodejs4-2.png?raw=true "None")
 
