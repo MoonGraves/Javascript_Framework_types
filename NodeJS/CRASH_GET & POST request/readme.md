@@ -4,7 +4,7 @@ Kaikenlaista pyyntö asioita mm. tiedoston muutos/päivitys ja julkaisua. Esim. 
 - GET   - (retrieve an index of resources or an individual resource)
 - PUT   - (create or replace a resource)
 - PATCH - (update/modify a resource)
-- DELTE - (remove a resource)
+- DELETE - (remove a resource)
 
 Tässä on luottu yksi random js tiedoston objekti asianssa eli id, nimi, email ja jne~~ , mitä löytyy sivustolta kuin: https://www.mockaroo.com/
 
