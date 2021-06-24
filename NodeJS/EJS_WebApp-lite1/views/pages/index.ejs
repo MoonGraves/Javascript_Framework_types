@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- This is home page -->
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<!-- valikkot home/about / ja jne-->
+<main>
+  <div class="jumbotron">
+    <h1>Something Cool</h1>
+    <p>EJS WebApplications</p>
+
+    <h2>Variable</h2>
+    <p><%= tagline %></p>
+
+    <ul>
+      <% mascots.forEach(function(mascot) { %>
+        <li>
+          <strong><%= mascot.name %></strong>
+          representing <%= mascot.organization %>,
+          born <%= mascot.birth_year %>
+        </li>
+      <% }); %>
+    </ul>
+
+  </div>
+</main>
+
+<!-- Copyright homma-->
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

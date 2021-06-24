@@ -1,0 +1,30 @@
+<!-- Default 404 error page -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<header>
+  <%- include('../partials/header', {variant: 'compact'}); %>
+</header>
+
+<body class="container">
+
+<main>
+  <div class="jumbotron">
+    <h1>Error pages! </h1>
+      <p>Maybe this page moved? Got deleted? Is hiding out in quarantine? Never existed in the first place?<p>Let's go <a href="/">home</a> and try from there.</p>
+  </div>
+</main>
+
+<!--Takaisin etusivussa node.js:ssä käytetään / (kautta), koska sieltä app.use on määritetty, että tämä on kotisivu, normaalisti kait menee koko file nimi eli (index.html) kait... -->
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
