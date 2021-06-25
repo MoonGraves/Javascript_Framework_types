@@ -1,0 +1,10 @@
+npm init -y
+npm install --save express
+
+node -v 
+tarkista nodejs versio
+
+npm install --save-dev nodemon
+
+terminaaliin (shell / terminal) syötät;
+npm start
