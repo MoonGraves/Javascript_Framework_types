@@ -8,3 +8,7 @@ Käyttäjä/asiakas/tekijä voi kuin lukaista, julkaista, poistaa tai jättää 
 Tässä ohjelmisto sisältyy automaatioidun dokumentaation , koodien generaattori (useille ohjelmointikielelle) ja testitapauksen generaattoriin
 
 ![Alt text](SwaggerJS-1.PNG?raw=true "None")
+
+
+RESTful api image
+![Alt text](Restful-1.PNG?raw=true "None")
