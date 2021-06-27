@@ -90,4 +90,29 @@ app.post('/books', (req, res) => {
   res.status(201).send();
 });
 
+/**
+ * @swagger
+ * /books:
+ *    put:
+ *      description: Put all books
+ *    parameters:
+ *      - name: books
+ *        in: query
+ *        description: Name the book
+ *        required: true
+ *        type: string
+ *      - pages: title
+ *        types: int
+ *        schema:
+ *          type: string
+ *          format: string
+ *    responses:
+ *      '201':
+ *        description: Successful created users
+ */
+
+app.put('/books', (req, res) => {
+  res.status(201).send();
+});
+
 app.listen(8080, () => console.log("listening on 8080"));

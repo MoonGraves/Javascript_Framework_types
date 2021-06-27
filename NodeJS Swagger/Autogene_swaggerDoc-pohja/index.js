@@ -13,7 +13,13 @@ const swaggerOptions = {
       title: "Mynthix API",
       description: "Mynthix API infot",
       contact: {
-        name: "Jotakin jännää"
+        name: "Mynthix Sovellus",
+        url: 'https://Mynthix.net',
+        email: 'Mynthix@yahoo.com',
+      },
+      license: {
+          name: 'Apache 2.0',
+          url: 'http://www.apache.org/licenses/LICENSE-2.0.html',
       },
     },
   },
@@ -68,6 +74,26 @@ app.get('/customers', (req, res) => {
 app.put('/customers', (req, res) => {
   res.status(200).send("Successful updates from the customers");
 });
+
+/**
+ * @swagger
+ * /customers:
+ *   post:
+ *     description: Post all the customers
+ *     parameters:
+ *      - name: title
+ *        description: Name the customers
+ *        in: formData
+ *        required: true
+ *        type: string
+ *     responses:
+ *       201:
+ *         description: Created
+ */
+app.post('/customers', (req, res) => {
+  res.status(201).send();
+});
+
 
 app.listen(port, () => {
   console.log(`Serveri käynnistyy porttiin... ${port}`);
