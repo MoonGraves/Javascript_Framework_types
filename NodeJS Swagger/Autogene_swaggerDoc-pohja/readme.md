@@ -8,7 +8,7 @@ Verkkopalvelun sovellusliittymiä, jotka noudattavat REST-arkkitehtuurirajoituks
 Ennen sitä pitää antaa terminal (komentolähteeseen) mitä npm pakettia pitää ladata. 
 NPM on pakettihallintaohjelmisto javascriptiin varten.npm on JavaScript-ajonaikaisen ympäristön Node.js paketin oletushallinta . Se koostuu komentoriviasiakkaasta, jota kutsutaan myös nimellä npm, ja online-tietokannasta julkisista ja maksetuista yksityisistä paketeista, nimeltään npm-rekisteri. Rekisteriin pääsee asiakkaan kautta, ja saatavilla olevia paketteja voi selata ja hakea npm-verkkosivuston kautta.
 
-<b>Home page</b>
+<b>Home page</b><br>
 ![Alt text](images/Node-Swagger1.PNG?raw=true "None")
 
 
