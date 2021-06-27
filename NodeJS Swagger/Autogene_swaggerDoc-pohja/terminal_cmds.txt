@@ -1,0 +1,11 @@
+swagger 
+Swagger on käyttöliittymän kuvauskieli RESTful- sovellusliittymien kuvaamiseen JSON: lla . Swaggeria käytetään yhdessä avoimen lähdekoodin ohjelmistotyökalujen kanssa RESTful- verkkopalvelujen suunnitteluun, rakentamiseen, dokumentointiin ja käyttöön . Swagger sisältää automatisoidun dokumentaation, koodien generoinnin (monille ohjelmointikielille) ja testitapausten generoinnin. Swagger (ohjelmisto)
+
+npm & muu install lataukset;;
+npm init -y
+npm i express
+npm install nodemon / npm install --save-dev nodemon
+npm install --save swagger-jsdoc swagger-ui-express express nodemon (vaihtoehto kommento)
+
+swagger paketit;;
+npm i swagger-jsdoc swagger-ui-express

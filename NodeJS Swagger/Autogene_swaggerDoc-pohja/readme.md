@@ -14,6 +14,7 @@ NPM on pakettihallintaohjelmisto javascriptiin varten.npm on JavaScript-ajonaika
 
 <b>Swagger page API</b>
 ![Alt text](images/Node-Swagger2.PNG?raw=true "None")
+![Alt text](images/Node-Swagger2-1.PNG?raw=true "None")
 ![Alt text](images/Node-Swagger3.PNG?raw=true "None")
 ![Alt text](images/Node-Swagger4.PNG?raw=true "None")
 
