@@ -1,0 +1,13 @@
+kommennot ja install pakettit
+
+npm i express
+npm i swagger-ui-express
+npm i swagger-jsdoc
+
+update/päivitys kommento
+npm i
+
+npm install --save swagger-jsdoc swagger-ui-express express nodemon
+
+terminal/shell kommento lähdettä, että käynnistettään tämä npm sovellus;;
+npm start
