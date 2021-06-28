@@ -17,3 +17,6 @@ Tämä on melko sama pohja kuin (Auto-swagger-array), mutta ei lisätty listaan 
 <b>Swagger page API</b>
 ![Alt text](images/Node-Swagger2.PNG?raw=true "None")
 ![Alt text](images/Node-Swagger3.PNG?raw=true "None")
+![Alt text](images/Node-Swagger4.PNG?raw=true "None")
+![Alt text](images/Node-Swagger5.PNG?raw=true "None")
+![Alt text](images/Node-Swagger6.PNG?raw=true "None")
