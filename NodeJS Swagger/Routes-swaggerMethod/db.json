@@ -1,0 +1,34 @@
+{
+  "books": [
+    {
+      "id": "4pv4kb78",
+      "title": "The Night Book",
+      "author": "Alien E. Wayne ",
+      "publisher": "John Wiley & Sons"
+    },
+    {
+      "id": "lxduqldd",
+      "title": "Programming C#",
+      "author": "John Foden",
+      "publisher": "Thomas Nelson"
+    },
+    {
+      "id": "7pbal19f",
+      "title": "The Cisco Network Style",
+      "author": "Wendell Doom and Dustin Krios",
+      "publisher": "Seagull Books"
+    },
+    {
+      "id": "ahb8680p",
+      "title": "The Python Snake",
+      "author": "Calvin R. Kennedy",
+      "publisher": "Polity"
+    },
+    {
+      "id": "wa2dIKMc",
+      "title": "Ohjelmointi Perusteet",
+      "author": "Eero S. Virtanen",
+      "publisher": "Tammi"
+    }
+  ]
+}

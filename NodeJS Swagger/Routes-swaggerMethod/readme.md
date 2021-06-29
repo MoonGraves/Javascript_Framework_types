@@ -12,7 +12,7 @@ Operaation tiedosto lukemista tässä json:ssa käytettään esim. kirjaa, sen k
 
 <b>Huom! </b> Latauksessa/installation pitää huomioida, että tämä swagger ohjelmiston paketti "swagger-jsdoc" pitää olla 6.0.1, muuten se ei toimi & sama homma lowdb pitää olla 1.0.0
 
-<b> npm i swagger-jsdoc@6.0.1 </b>
+<b> npm i swagger-jsdoc@6.0.1 </b><br>
 <b> npm install lowdb@1.0.0 </b>
 
 <b>Swagger page API</b><br>

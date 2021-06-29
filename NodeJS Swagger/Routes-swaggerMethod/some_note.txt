@@ -1,0 +1,19 @@
+Swagger routes;; on merkintä linkittää polun menetelmään. Tämä operaatio saa yksilöllisen id: n, jota käytetään eri paikoissa menetelmän nimellä. Yksi tällainen käyttö on menetelmien nimissä esimerkiksi asiakkaan luomista varten. 
+
+Koska käytettävissä reittiä on monta, tätä työkalua ei riitä vain jäsentää polun, jotta tekijä antaa valitsemanssa reitityskirjaston. Siksi teossa pitää olla määritettävä polkumalli itselle kelvollisen syntaksin.
+Lisää tietoa;; https://goswagger.io/use/spec/route.html
+
+__________________________________________________________________
+
+lowdb/adapters/FileSync - joku tämmöinen pieni paikallinen JSON tietokanta, mitä tukee Nodejs ja yms ohjelmistoa. 
+
+Toistaisissa esimerkeissä on käytetty FileSync-sovitinta. Suurin osa tietokannoista toimii kuitenkin asynkronisesti, jotta sovelluksen suorittamista ei estetä. Lowdb: llä on myös asynkroninen sovitin. FileSync-sovittimen sijasta sinun on pikakäynnistettävä FileAsync-sovitin ja välitettävä se lowdb: lle. 
+
+Sitten voit käyttää lowdb: n rajapintoja tavalliseen tapaan. Ainoa ero on, että sekä kirjoitus- että arvomenetelmät palauttavat lupauksia konkreettisten arvojen sijaan. Lähdekoodin pitämiseksi tyhjänä on suositeltavaa käyttää async / await -ohjelmaa. Esimerkki 6 esittää esimerkin, jossa tietue luodaan ensin ja luetaan sitten uudelleen tietokannasta. 
+
+Lisää tietoa;; https://reposhub.com/javascript/storage/typicode-lowdb.html
+https://helpdev.eu/node-js-lowdb-a-lightweight-database-alternative/
+
+__________________________________________________________________
+
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes
