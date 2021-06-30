@@ -9,4 +9,7 @@ Lisää tietoa;; https://goswagger.io/use/spec/route.html
 
 Operaation tiedosto lukemista tässä json:ssa käytettään esim. kirjaa, sen kohdistuva (random) id tunnus & kirjan nimi, kirjoittaja ja julkaisu kustantamo (esim. otava, john wiley & pälä pälä)
 
-Tämä on melko sama kuin se edellinen (Router-swaggerMethod) harjoitus, mutta tässä mennään vähä helpommin ehkä..
+Tämä on melko sama kuin se edellinen (Router-swaggerMethod) harjoitus, mutta tässä kaikki RESTful operaatiot tapahtuu tiedoston book.js (/routes/book.js). Books.js :ssä pitää vain olla installattu (express) ja reititys (router) ja lopput RESTful (PUT, POST, GET & DELETE) anonyymi funktion komentti /** *Blah blah */
+
+<b>Home page</b><br>
+![Alt text](images/Node-Swagger-1.PNG?raw=true "None")
