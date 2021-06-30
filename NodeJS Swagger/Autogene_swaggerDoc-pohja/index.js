@@ -64,8 +64,8 @@ app.get('/customers', (req, res) => {
  *        description: Name the our customer
  *        required: false
  *        schema:
- *          type: string
- *          format: string
+ *         type: string
+ *         format: string
  *    responses:
  *      '201':
  *        description: Successful created users
@@ -80,6 +80,8 @@ app.put('/customers', (req, res) => {
  * /customers:
  *   post:
  *     description: Post all the customers
+ *     tags:
+ *       - Julkaise jotakin
  *     parameters:
  *      - name: title
  *        description: Name the customers
@@ -93,7 +95,6 @@ app.put('/customers', (req, res) => {
 app.post('/customers', (req, res) => {
   res.status(201).send();
 });
-
 
 app.listen(port, () => {
   console.log(`Serveri käynnistyy porttiin... ${port}`);

@@ -46,7 +46,7 @@ const router = express.Router();
 *            finished: true
 */
 
-//Tagi otsikko
+//Tagi otsikko & kohdistuva ryhmä oma RESTful tekijät
 /**
  * @swagger
  * tags:
@@ -166,6 +166,15 @@ const router = express.Router();
  *      "404":
  *        description: Book not found* 
  * 
+ */
+
+//Toinen tag START HERE:: & pieni testaus, muuten menee edellisen tag mukaan, jos on useita toimintoja
+//Otsikko / väliotsikko & tummennettu teksti
+/**
+ * @swagger
+ * tags:
+ *  name: Names
+ *  description: The name of something
  */
 
 module.exports = router;

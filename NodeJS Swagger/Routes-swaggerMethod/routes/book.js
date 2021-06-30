@@ -235,4 +235,13 @@ router.delete("/:id", (req, res) => {
 	res.sendStatus(200);
 });
 
+//Toinen tag START HERE:: & pieni testaus, muuten menee edellisen tag mukaan, jos on useita toimintoja
+//Otsikko / väliotsikko & tummennettu teksti
+/**
+ * @swagger
+ * tags:
+ *  name: Names
+ *  description: The name of something
+ */
+
 module.exports = router;
