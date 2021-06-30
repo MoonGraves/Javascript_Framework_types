@@ -1,0 +1,4 @@
+npm install
+npm i swagger-ui-express swagger-jsdoc
+
+npm install body-parser express swagger-jsdoc swagger-ui-express
