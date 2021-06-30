@@ -13,3 +13,7 @@ Tämä on melko sama kuin se edellinen (Router-swaggerMethod) harjoitus, mutta t
 
 <b>Home page</b><br>
 ![Alt text](images/Node-Swagger-1.PNG?raw=true "None")
+
+<b>API pages schemas and post </b>
+![Alt text](images/Node-Swagger-2.PNG?raw=true "None")
+![Alt text](images/Node-Swagger-3.PNG?raw=true "None")
