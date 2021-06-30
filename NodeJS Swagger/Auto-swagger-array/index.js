@@ -74,6 +74,8 @@ app.get('/books', (req, res) => {
  * /books:
  *   post:
  *     description: Get all books
+ *     tags:
+ *       -  POST books
  *     parameters:
  *      - name: title
  *        description: title of the book

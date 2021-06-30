@@ -39,6 +39,8 @@ app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerAPIDesc));
  * @swagger
  * /getData:
  *    get:
+ *      tags:
+ *        - [MainData]
  *      description: This is just API test
  *      responses:
  *        200:
