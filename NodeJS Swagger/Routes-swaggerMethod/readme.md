@@ -21,7 +21,23 @@ Operaation tiedosto lukemista tässä json:ssa käytettään esim. kirjaa, sen k
 
 ![Alt text](images/Node-Swagger2.PNG?raw=true "None")
 ![Alt text](images/Node-Swagger3.PNG?raw=true "None")
+
+<b>Get; hakea tekijän id:n listan mukaan</b>
 ![Alt text](images/Node-Swagger4.PNG?raw=true "None")
+![Alt text](images/Node-Swagger4-1.PNG?raw=true "None")
+
+<b>POST; julkaisee uutta "kirjaa" listaan
 ![Alt text](images/Node-Swagger5.PNG?raw=true "None")
+![Alt text](images/Node-Swagger5-1.PNG?raw=true "None")
+![Alt text](images/Node-Swagger5-2.PNG?raw=true "None")
+
+<b>PUT; pientä päivitystä </b>
 ![Alt text](images/Node-Swagger6.PNG?raw=true "None")
+![Alt text](images/Node-Swagger6-1.PNG?raw=true "None")
 ![Alt text](images/Node-Swagger7.PNG?raw=true "None")
+
+<b> JSON </b>
+Tähän listaukseen tulee pientä päivitystä, mikäli kuin testaa jokaisen toiminnan 
+
+![Alt text](images/Node-Swagger0.PNG?raw=true "None")
+
