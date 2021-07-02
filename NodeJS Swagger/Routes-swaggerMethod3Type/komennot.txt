@@ -1,0 +1,5 @@
+terminal ja install komennot;;
+
+npm init -y
+npm i express swagger-ui-express swagger-jsdoc express-basic-auth
+
