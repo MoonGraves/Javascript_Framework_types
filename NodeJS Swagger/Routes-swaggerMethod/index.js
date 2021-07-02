@@ -1,3 +1,16 @@
+/*Tässä kehityspalvelimen määrittyksessä on, tärkeimmät muutama kokoonpanno lataukset paketit. Kun terminaalissa annetaan lataus "npm install <package-name".
+
+Muutama tärkeät pakeit:
+
+- lowdb : datan varastointi
+- morgan : pyyntojen vastaanotto
+- nanoid : tunnuksen/id luomiseen
+- cors : alkuperäisen välisen politiikan laatimiseksi.
+
+ja kaksi pää swagger pakettia ovat swaggerui ja swaggerJsDoc lataus paketit, että express ja porttin määritys
+
+*/
+
 //Pääsovellus
 const express = require("express");
 const cors = require("cors");
