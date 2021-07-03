@@ -5,7 +5,7 @@ Pääsovellus (index.js) lukaisee operaation toisesta tiedoston kautta, että si
 
 Lisäksi käytettävien reittiä voi olla monta, mutta tätä työkalua ei riitä vain, että jäsentää polun ja tekijä antaa valitsemanssa reitityskirjaston. Tässä teossa pitää olla määreltävinä polkumalli teossa kelvolliseen syntaksiin.
 
-Lisää tietoa;; https://goswagger.io/use/spec/route.html
+<h3> Lisää tietoa;; https://goswagger.io/use/spec/route.html </h3>
 
 Tämä toiminta sovellus perustuu edellisen ohjelmasta, mitä on kuin yhteenveto ja lisätään monipuolisia toimintoja mitä voi olla mahdollista yhteen kokonaiseen projektiin. Sekä tähän vaikuttaa pientä käyttöliittymää (UI, user interface) & ja useiden toimintojen rakenteita, että ettei ne mene ristiin ja sekaisin.
 
