@@ -1,4 +1,5 @@
 Ensimmäinen swagger api sovellus nodejs:n kanssa ja tämä on alku pohja esimerkki
+27.6.2021
 
 Perus array [] pari kirjaa esimerkkiä, että miten tulostettaisi sitä api RESTful - tietokanta tai ohjelmistoarkkitehtuuriin. Tässä "GET" vain näytettään pari kirjaa vain nimi ja id, ja sivun määrä.
 

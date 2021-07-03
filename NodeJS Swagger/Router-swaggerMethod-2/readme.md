@@ -1,4 +1,4 @@
-<H1> Swagger ohjelmisto linkki polku methodi</H1>
+<H1> Swagger ohjelmisto linkki polku methodi 30.6.2021</H1>
 
 <b>Swagger routes operaatio:</b>
 Pääsovellus (index.js) lukaisee operaation toisesta tiedoston kautta, että sieltä kuin vastaanottaa/lähettää toiminnan mitä sieltä haluttaan kuin tehdä. Toisessa kansion tiedostosta on määritetty RESTful toiminta, eli (PUT, POST, GET & DELETE) teknisiä ominaisuuksia. 

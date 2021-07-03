@@ -1,4 +1,4 @@
-<b> Swagger ohjelmisto pohja</b>
+<b> Swagger ohjelmisto pohja 28.6.2021</b>
 
 Tämä on valmis js pohja sovellus, että itse saa säätää siitä eteenpäin mitä haluaa. Eli lisää swagger ohjelmiston ominaisuuksia, mitkä liittyy siihen RESTful tiedonsiirtoon & mutta tässä on lisätty kaikki mitä siinä pitää olla, periaatteessa valmis RESTful osat, oletuksena määrittämättömiä.
 
