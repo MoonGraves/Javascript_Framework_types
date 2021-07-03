@@ -1,11 +1,11 @@
-<b> Swagger ohjelmisto linkki polku methodi</b>
+<h2> Swagger ohjelmisto linkki polku methodi</h2>
 
 <b>Swagger routes operaatio:</b>
 Pääsovellus (index.js) lukaisee operaation toisesta tiedoston kautta, että sieltä kuin vastaanottaa/lähettää toiminnan mitä sieltä haluttaan kuin tehdä. Toisessa kansion tiedostosta on määritetty RESTful toiminta, eli (PUT, POST, GET & DELETE) teknisiä ominaisuuksia. 
 
 Lisäksi käyteättvien reittiä voi olla monta, mutta tätä työkalua ei riitä vain, että jäsentää polun ja tekijä antaa valitsemanssa reitityskirjaston. Tässä teossa pitää olla määreltävinä polkumalli teossa kelvolliseen syntaksiin.
 
-Lisää tietoa;; https://goswagger.io/use/spec/route.html
+<h3> Lisää tietoa;; https://goswagger.io/use/spec/route.html </h3>
 
 Operaatiossa ei mitään erikoista, koska tässä ei lueta mitään json tietokantaa ja jne. Vain kuin lähettää pari random/vale lukua, ja toistuvat uudestaan kuin api luettavana tiedostona. Ja yksi (POST) toiminnassa, avauttuu kuin lukko, jotta sieltä tulostuu tunnus (token) id, mitä tämä id liitettään (Authorize):lle. Varsinaisesti tälle AUthorize:lle voidaan syöttää vale tunnustakin, niin kuin tämä järjestelmä ollaan kuin kirjauduttu sisään.
 
