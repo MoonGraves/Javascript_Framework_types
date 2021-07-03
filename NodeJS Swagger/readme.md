@@ -12,5 +12,6 @@ Tässä ohjelmisto sisältyy automaatioidun dokumentaation , koodien generaattor
 ![Alt text](SwaggerJS-1.PNG?raw=true "None")
 
 <br>
+
 <b>RESTful api image</b>
 ![Alt text](Restful-1.PNG?raw=true "None")
