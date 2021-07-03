@@ -10,14 +10,14 @@ Lisää tietoa;; https://goswagger.io/use/spec/route.html
 Tämä toiminta sovellus perustuu edellisen ohjelmasta, mitä on kuin yhteenveto ja lisätään monipuolisia toimintoja mitä voi olla mahdollista yhteen kokonaiseen projektiin. Sekä tähän vaikuttaa pientä käyttöliittymää (UI, user interface) & ja useiden toimintojen rakenteita, että ettei ne mene ristiin ja sekaisin.
 
 
-Tämä oli alunperin kopio (Router-swaggerMethod3Type):stä, mutta lisätty muita osia sisään edellisien harjoituksien ohjelmistoista. Kokonaisuudessan tämä on kuitenkin RESTful operaatio toiminta, että yritettään katsoa saadaanko vielä yksi yksikkö sisään. Tässä puuttuu kuin json tiedosto, mikä perustuu n. 3-4 tiedosto paketti lataukseen, mitkä ovat "lowdb", "morgan", "nanoid" & "cors". Jokaisella on oma toiminta paketti järjestelmä, että "FileSync" on tämmöinen paikallinen JSOn tietokanta, mitä tukee NodeJS ja yms ohjelmistoa.
+Tämä oli alunperin kopio <b> (Router-swaggerMethod3Type):stä </b>, mutta lisätty muita osia sisään edellisien harjoituksien ohjelmistoista. Kokonaisuudessan tämä on kuitenkin RESTful operaatio toiminta, että yritettään katsoa saadaanko vielä yksi yksikkö sisään. Tässä puuttuu kuin json tiedosto, mikä perustuu n. 3-4 tiedosto paketti lataukseen, mitkä ovat <b> "lowdb", "morgan", "nanoid" & "cors" </b>. Jokaisella on oma toiminta paketti järjestelmä, että <b> "FileSync" </b> on tämmöinen paikallinen JSON tietokanta, mitä tukee NodeJS ja yms ohjelmistoa.
 
 <b> 
 - lowdb : datan varastointi <br>
 - morgan : pyyntojen vastaanotto <br>
 - nanoid : tunnuksen/id luomiseen <br>
 - cors : alkuperäisen välisen politiikan laatimiseksi. <br>
-</b>
+</b> <br>
 
 
 <b>Home page</b><br>
