@@ -22,12 +22,12 @@ Näitä n.3-4kpl tiedostosta löytyy lisää npm sivustosta kuitenkin, mitkä pe
 </b> <br>
 
 
-<h3>Default NodeJS home page</h3><br>
+<b>Default NodeJS home page</b><br>
 ![Alt text](images/Node-Swagger-1.PNG?raw=true "None") <br>
 
-<h3>Swagger home page, options and RESTful </h3>
+<b>Swagger home page, options and RESTful </b>
 ![Alt text](images/Node-Swagger-2.PNG?raw=true "None")
 ![Alt text](images/Node-Swagger-2-1.PNG?raw=true "None") <br>
 
-<h3>Schema show two items and examples </h3>
+<b>Schema show two items and examples </b>
 ![Alt text](images/Node-Swagger-3.PNG?raw=true "None")
