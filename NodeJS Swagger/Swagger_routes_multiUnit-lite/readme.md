@@ -12,6 +12,8 @@ Tämä toiminta sovellus perustuu edellisen ohjelmasta, mitä on kuin yhteenveto
 
 Tämä oli alunperin kopio <b> (Router-swaggerMethod3Type):stä </b>, mutta lisätty muita osia sisään edellisien harjoituksien ohjelmistoista. Kokonaisuudessan tämä on kuitenkin RESTful operaatio toiminta, että yritettään katsoa saadaanko vielä yksi yksikkö sisään. Tässä puuttuu kuin json tiedosto, mikä perustuu n. 3-4 tiedosto paketti lataukseen, mitkä ovat <b> "lowdb", "morgan", "nanoid" & "cors" </b>. Jokaisella on oma toiminta paketti järjestelmä, että <b> "FileSync" </b> on tämmöinen paikallinen JSON tietokanta, mitä tukee NodeJS ja yms ohjelmistoa.
 
+Näitä n.3-4kpl tiedostosta löytyy lisää npm sivustosta kuitenkin, mitkä perustuvat sieltä.
+
 <b> 
 - lowdb : datan varastointi <br>
 - morgan : pyyntojen vastaanotto <br>
@@ -20,5 +22,16 @@ Tämä oli alunperin kopio <b> (Router-swaggerMethod3Type):stä </b>, mutta lis�
 </b> <br>
 
 
-<b>Home page</b><br>
+<b>Default NodeJS home page</b><br>
 ![Alt text](images/Node-Swagger-1.PNG?raw=true "None")
+
+
+<br>
+<b>Swagger home page, options and RESTful </b>
+![Alt text](images/Node-Swagger-2.PNG?raw=true "None")
+![Alt text](images/Node-Swagger-2-1.PNG?raw=true "None")
+
+
+<br>
+<b>Schema show two items and examples <b/>
+![Alt text](images/Node-Swagger-3.PNG?raw=true "None")
