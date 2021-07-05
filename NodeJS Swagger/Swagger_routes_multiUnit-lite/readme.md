@@ -19,6 +19,8 @@ Näitä n.3-4kpl tiedostosta löytyy lisää npm sivustosta kuitenkin, mitkä pe
 - morgan : pyyntojen vastaanotto <br>
 - nanoid : tunnuksen/id luomiseen <br>
 - cors : alkuperäisen välisen politiikan laatimiseksi. <br>
+- dotenv: nollariippuvuusmoduuli, joka lataa ympäristömuuttujan .env tiedoston, ja kokopanon tallentamista koodista erillisissä ympäristössä & ja pitää olla mukana kuin; dotenv.config() <br>
+- bodyparser : middleware , saapuvan pyynnön väliohjelmiston käsittelijän edessä, jotta käsittelee req.body-ominaisuutta eli, määrittään methodi/parametrin, että lukaiseen käyttäjän syötön esim. id tai kirjoittaa jotakin tekstiä mikäli jos täsmää datan tietokantaan. <br>
 </b> <br>
 
 
