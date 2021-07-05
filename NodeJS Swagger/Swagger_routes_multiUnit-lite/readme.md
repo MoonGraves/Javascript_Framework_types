@@ -31,5 +31,5 @@ Näitä n.3-4kpl tiedostosta löytyy lisää npm sivustosta kuitenkin, mitkä pe
 ![Alt text](images/Node-Swagger-2.PNG?raw=true "None")
 ![Alt text](images/Node-Swagger-2-1.PNG?raw=true "None") <br>
 
-<b>Schema show two items and examples </b>
+<b>Schema show propperties of the items and examples </b>
 ![Alt text](images/Node-Swagger-3.PNG?raw=true "None")
