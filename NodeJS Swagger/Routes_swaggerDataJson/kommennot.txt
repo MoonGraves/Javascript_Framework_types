@@ -1,0 +1,4 @@
+npm install express cors morgan body-parser dotenv
+npm install @babel/core @babel/node @babel/preset-env
+
+npm install swagger-jsdoc swagger-ui-express

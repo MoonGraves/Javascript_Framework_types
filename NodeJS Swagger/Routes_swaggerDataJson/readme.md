@@ -13,6 +13,5 @@ Tässä operaatiossa tapahtuu, että pääsovellus yhdistyy polku reitimmen (rou
 <b>Swagger Default Home Page</b><br>
 ![Alt text](images/Node-Swagger1.PNG?raw=true "None")
 
-<b>Swagger RESTful posts and Schema</b>
+<b>Swagger RESTful posts and Schemas</b>
 ![Alt text](images/Node-Swagger2.PNG?raw=true "None")
-
