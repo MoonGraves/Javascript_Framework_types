@@ -33,3 +33,6 @@ Näitä n.3-4kpl tiedostosta löytyy lisää npm sivustosta kuitenkin, mitkä pe
 
 <b>Schema show propperties of the items and examples </b>
 ![Alt text](images/Node-Swagger-3.PNG?raw=true "None")
+
+<b>Read exist file of the json and some notes</b>
+![Alt text](images/Node-Swagger-4.PNG?raw=true "None")
