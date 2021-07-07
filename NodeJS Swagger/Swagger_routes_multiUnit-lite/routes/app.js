@@ -9,7 +9,7 @@ const router = express.Router();
 const data = require("../data.js");
 const bodyParser = require("body-parser");
 
-router.use(bodyParser.json()); // to use body object in requests
+router.use(bodyParser.json()); // to use body object in requests & bodyparser lisää tietoa;;; http://expressjs.com/en/resources/middleware/body-parser.html
 
 /*antaa käytää apin, polku session, että luoo jonkinlaisen json luettelon, tämä lukaisee kuin käyttäjän lukemat, ja tämä julkaisee sen sivulle esim) https://directquickwittedmoto.zhaotan18x.repl.co/api/getData?name=ideapad
 
@@ -290,8 +290,14 @@ router.delete('/deleteBooks', (req, res) => {
 });
 
 
-//->>>>>TÄSSÄ ALKAA LUKAISTA TIEDOSTON data.js TIETOKANNAN<<<<<
+//>>>>TÄSSÄ ALKAA LUKAISTA TIEDOSTON data.js TIETOKANNAN<<<<<
 
+/*tässä käytettään bodyParser, mitä kuin lukaisee sovelluksen avattuna laatikosta täydentävien lomakkeen, että esim. haettaan id tai halutaan muokata + julkaista jotakin tietokannan asiaa, samaan tähän pitää olla req.body - ominaisuus olla mukana.
+
+Siksi noissa app.use pälä pälä lukee (req.params.id) tai (req.body) tai muu määritys. Sekä määrityksessä, mikäli haluttan julkaista pitää olla "Let", se sallii käyttjän ilmoittaa muuttujan, jotka rajoittuvat lohkolausekkeen tai lausekkeen laajuuteen, jolla sitä käytetään, toisin kuin "var"-avainsana, joka ilmoittaa muuttujan globaalisti tai paikallisesti koko funktiolle lohkon laajuudesta riippumatta. 
+Toinen ero "var" ja "let" välillä on, että jälkimmäinen alustetaan arvoon vasta.
+
+ */
 /**
  * @swagger
  * tags:
@@ -452,10 +458,11 @@ router.delete("/:id", (req, res) => {
   }
 });
 
-//----->>>>Schema malli kaaviot START HERE<<<<<------
+//----->>>>>>Schema malli kaaviot START HERE<<<<<<<------
 
 /*Schema komponentti dia & esimerkki malli kaaviot,, mikä tulee alimmaksi noita RESTful toiminnasta. Toi pieni mallinnus on kuin, että näin tehdään tämä RESTful toimintoja & ja tämä on oma ikkuna malli/kaavio
 */
+
 /**
 *  @swagger
 *   components:
@@ -467,7 +474,7 @@ router.delete("/:id", (req, res) => {
 *           - author
 *           - finished
 *           - publisher
-
+*
 *         properties:
 *           id:
 *             type: integer
@@ -488,7 +495,7 @@ router.delete("/:id", (req, res) => {
 *             type: string
 *             format: date
 *             description: The date of the record creation.
-
+*
 *         example:
 *            title: The Programming Night
 *            author: Asd F. Qwerty & Zxc V. BNM
@@ -511,7 +518,7 @@ router.delete("/:id", (req, res) => {
 *           - continent
 *           - age
 *           - status
-
+*
 *         properties:
 *           id:
 *             type: integer
@@ -528,7 +535,7 @@ router.delete("/:id", (req, res) => {
 *           age:
 *             type: number
 *             description: The person age
-
+*
 *           createdAt:
 *             type: string
 *             format: date
