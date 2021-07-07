@@ -29,7 +29,8 @@ Tässä on jotakin toimintoja RESTful juttuja eli (GET, PUT, DELETE & POST) teki
 <b>Example after </b>
 ![Alt text](images/NodeJS-2.PNG?raw=true "None") <br>
 
+
 <b>Commands / Shell operations </b>
-<p>First one is like give a some of note, then it will success</p><
-p> Second one is replay it, but it will show all inside of json notes anyway</p>
+First one is like give a some of note, then it will success
+Second one is replay it, but it will show all inside of json notes anyway
 ![Alt text](images/NodeJS-3.PNG?raw=true "None")
