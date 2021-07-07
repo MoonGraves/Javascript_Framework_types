@@ -30,7 +30,7 @@ Tässä on jotakin toimintoja RESTful juttuja eli (GET, PUT, DELETE & POST) teki
 ![Alt text](images/NodeJS-2.PNG?raw=true "None") <br>
 
 
-<b>Commands / Shell operations </b>
-First one is like give a some of note, then it will success
-Second one is replay it, but it will show all inside of json notes anyway
+<b>Commands / Shell operations </b><br>
+First one is like give a some of note, then it will success <br> 
+Second one is replay it, but it will show all inside of json notes anyway <br>
 ![Alt text](images/NodeJS-3.PNG?raw=true "None")
