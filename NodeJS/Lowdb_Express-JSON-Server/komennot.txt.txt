@@ -1,0 +1,16 @@
+install ja muu lataus paketit;;
+
+npm init -y
+yarn add express cors lowdb nanoid
+yarn add body-parser
+
+
+Kirjoita uutta note viestiä;;
+curl --header "Content-Type: application/json" --request POST --data '{"text" : "moi miten meenee?"}' http://localhost:8080/notes/new
+
+
+toistettaan sitä edellistä viestiä & lukaista koko json data array;;
+curl http://localhost:8080/notes
+
+tai vaihtoehtoisena on toistaa sitä toisessa välilehdessä, riittää oman localhost osoitteen eli..;;; 
+localhost:8080/notes
