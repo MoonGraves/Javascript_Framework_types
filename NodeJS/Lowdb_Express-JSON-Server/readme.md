@@ -16,7 +16,7 @@ Muutama tärkeät pakeit:<br>
 - nanoid : tunnuksen/id luomiseen <br>
 - cors : alkuperäisen välisen politiikan laatimiseksi. <br>
 </b>
-
+<br>
 Ennen sitä pitää antaa terminal (komentolähteeseen) mitä npm pakettia pitää ladata. 
 NPM on pakettihallintaohjelmisto javascriptiin varten.npm on JavaScript-ajonaikaisen ympäristön Node.js paketin oletushallinta. Se koostuu komentoriviasiakkaasta, jota kutsutaan myös nimellä npm, ja online-tietokannasta julkisista ja maksetuista yksityisistä paketeista, nimeltään npm-rekisteri. Rekisteriin pääsee asiakkaan kautta, ja saatavilla olevia paketteja voi selata ja hakea npm-verkkosivuston kautta.
 
@@ -24,5 +24,12 @@ Tässä on jotakin toimintoja RESTful juttuja eli (GET, PUT, DELETE & POST) teki
 
 <b>API json inside of the files</b><br>
 <b>Example before </b>
-![Alt text](images/NodeJS-1.PNG?raw=true "None")
+![Alt text](images/NodeJS-1.PNG?raw=true "None") <br>
 
+<b>Example after </b>
+![Alt text](images/NodeJS-2.PNG?raw=true "None") <br>
+
+<b>Commands / Shell operations </b>
+<p>First one is like give a some of note, then it will success</p><
+p> Second one is replay it, but it will show all inside of json notes anyway</p>
+![Alt text](images/NodeJS-3.PNG?raw=true "None")
