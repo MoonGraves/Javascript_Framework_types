@@ -1,4 +1,4 @@
-<b> NodeJS Lowdb JSON serveri 6.7.2021</b>
+<H2> NodeJS Lowdb JSON serveri 6.7.2021</H2>
 
 Operaatiossa:: yritettään kuin terminaalissa/komento lähteessä antaa jokin komento, että kirjataan jokinlainen muistiinpanno(note) ylös, että uuden (note) jälkeen muodostuu aina uusi id sille. Kuin oma viesti, ja sillä on oma id.
 
@@ -8,12 +8,14 @@ Tää on tooi npm paketin "lowdb" mikäli oli edellisen swagger-routesmehod ohje
 
 Tässä kehityspalvelimen määrittyksessä on, tärkeimmät muutama kokoonpanno lataukset paketit. Kun terminaalissa annetaan lataus "npm install <package-name".
 
-Muutama tärkeät pakeit:
-
-- lowdb : datan varastointi
-- morgan : pyyntojen vastaanotto
-- nanoid : tunnuksen/id luomiseen
-- cors : alkuperäisen välisen politiikan laatimiseksi.
+<b>
+Muutama tärkeät pakeit:<br>
+<br>
+- lowdb : datan varastointi <br> 
+- morgan : pyyntojen vastaanotto <br>
+- nanoid : tunnuksen/id luomiseen <br>
+- cors : alkuperäisen välisen politiikan laatimiseksi. <br>
+</b>
 
 Ennen sitä pitää antaa terminal (komentolähteeseen) mitä npm pakettia pitää ladata. 
 NPM on pakettihallintaohjelmisto javascriptiin varten.npm on JavaScript-ajonaikaisen ympäristön Node.js paketin oletushallinta. Se koostuu komentoriviasiakkaasta, jota kutsutaan myös nimellä npm, ja online-tietokannasta julkisista ja maksetuista yksityisistä paketeista, nimeltään npm-rekisteri. Rekisteriin pääsee asiakkaan kautta, ja saatavilla olevia paketteja voi selata ja hakea npm-verkkosivuston kautta.
