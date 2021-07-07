@@ -2,20 +2,32 @@
 
 */
 
+//TÄMÄ ON PÄÄSOVELLUS, MISSÄ LATAUTUU NOI PAKETIT JA YMS OSAT MÄÄRITYKSET
+//Lataukset NPM paketit
 const express = require("express");
 const swaggerUI = require("swagger-ui-express");
 const swaggerJsDoc = require("swagger-jsdoc");
 const basicAuth = require("express-basic-auth");
 
-//exist folder & file
-const { router } = require("./routes/app");
-
 const cors = require("cors");
 const morgan = require("morgan");
 const dotenv = require("dotenv");
 
+const lowDb = require("lowdb");
+
+const FileSync = require("lowdb/adapters/FileSync")
+const bodyParser = require("body-parser")
+const { nanoid } = require("nanoid");
+
+//read exist file/folder
+const db = lowDb(new FileSync('db.json'))
+const { router } = require("./routes/app");
+
 const app = express();
 const PORT = 8080;
+
+//let user write db notes something 
+db.defaults({ notes: [] }).write()
 
 dotenv.config();
 
@@ -23,6 +35,8 @@ app.use(morgan("dev"));
 app.use(cors());
 
 app.use(express.json());
+app.use(bodyParser.json())
+
 
 const options = {
 	definition: {
@@ -43,7 +57,7 @@ const options = {
 		},
 
 		servers: [{
-				url: "https://routes-swaggermethod3type-1.zhaotan18x.repl.co/",
+				url: "https://routes-swaggermethod3type-project.zhaotan18x.repl.co/",
         description: "API of the system"
 			},
 		],
@@ -77,6 +91,20 @@ app.use("/api", router);
 app.get("/", (req, res) => {
   res.send("Default home page");
 });
+
+//Show the notes as inside file of the json
+app.get('/notes', (req, res) => {
+  const data = db.get("notes").value()
+  return res.json(data)
+})
+
+app.post('/notes/new', (req, res) => {
+  const note = req.body
+  db.get("notes").push({
+    ...note, id: nanoid()
+  }).write()
+  res.json({ success: true })
+})
 
 
 app.listen(PORT, () => console.log(`Server Running on port ${PORT}`));
