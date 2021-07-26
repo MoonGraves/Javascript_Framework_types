@@ -7,6 +7,7 @@ Kaikenlaista pyyntö asioita mm. tiedoston muutos/päivitys ja julkaisua. Esim. 
 - DELETE - (remove a resource)
 
 Tässä on luottu yksi random js tiedoston objekti asianssa eli id, nimi, email ja jne~~ , mitä löytyy sivustolta kuin: https://www.mockaroo.com/
+POST, GET, PUT, PATCH & DELETE toiminta tapahtuu alhaalla, mutta tässä on käytetty postman sivua, minkä löytyy:: https://www.postman.com/
 
 Lisäksi toiminassa PUT & DELETE & muu pyyntö (request) testattu postman sivustossa, missä editoittaan sitä luotua parser js sisäisen tiedostoa
 
