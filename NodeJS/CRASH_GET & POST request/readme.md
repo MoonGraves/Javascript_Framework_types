@@ -21,6 +21,9 @@ Lisäksi toiminassa PUT & DELETE & muu pyyntö (request) testattu postman sivust
 ![Alt text](images/nodejs2-1.PNG?raw=true "None")
 ![Alt text](images/nodejs3.png?raw=true "None")
 ![Alt text](images/nodejs4.png?raw=true "None")
+
+Tämä on postman sivusto minkä löytää sivustolta kuin:: https://www.postman.com/
+Missä voi kokeilla näitä POST, GET, DELETE, PATCH & DELETE toimintoja, vähä kuin simulaatio melkee
 ![Alt text](images/nodejs4-1.png?raw=true "None")
 ![Alt text](images/nodejs4-2.png?raw=true "None")
 
