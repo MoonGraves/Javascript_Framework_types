@@ -5,9 +5,8 @@ sekä pieni txt jotakin npm latausta, poistoa ja version paketin tarkistus & voi
 käynnissä oleva sovelluksen ladattujen paketin versiot, että mitä kaikea sisällä on
 
 <h3> Osa näissä harjoituksissa on jotakin tuntematomia sivustoja käytetty eli pelkä kvua: </h3>
-<b> Tässä on esim muutama linkki:: </b>
-
+<b> Tässä on esim muutama linkki:: </b><br>
 https://www.postman.com/
-
-<b> random json tiedoston luominen </b>
+<br><hr>
+<b> random json tiedoston luominen </b> <br>
 https://www.mockaroo.com/
