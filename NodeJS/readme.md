@@ -8,3 +8,6 @@ käynnissä oleva sovelluksen ladattujen paketin versiot, että mitä kaikea sis
 <b> Tässä on esim muutama linkki:: </b>
 
 https://www.postman.com/
+
+<b> random json tiedoston luominen </b>
+https://www.mockaroo.com/
