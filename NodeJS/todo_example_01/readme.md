@@ -7,4 +7,5 @@ muita vaihtoehtoja tyyppisiä harjoituksia, jossa tarvitaan joko tietokanta <b>m
 Tässä käytettään enemmän kuin <b>express </b> eli kuin sivusto toiminta tehtävä, että käyttäjä itse lisää mitä pitä tehdä, mikäli listassa tehty, niin se tippuu kohti alaspäin.
 Kuin xyz- tehtävä tehty, ja se jää kuin historiaan ja sitä ei voi kuin poistaa kokonaan
 
+<b>Tämä on vain esimerkki, sitä ehkä tulee editoimaan lisää sitä ulkonäköä vähäsen</b>
 ![Alt text](images/nodejs1.PNG?raw=true "None")
