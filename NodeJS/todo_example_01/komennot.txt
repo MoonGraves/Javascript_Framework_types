@@ -1,0 +1,8 @@
+install lataus pakeit ja muut komennot:::
+
+npm int -y
+npm install express --save
+npm install mongoose --save
+npm install ejs --save
+
+npm install body-parser --save
