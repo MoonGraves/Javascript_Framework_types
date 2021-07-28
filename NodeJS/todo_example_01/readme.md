@@ -15,3 +15,4 @@ Sekä tähän vaikuttaa for loop funktioon, koska kun yritettään lisätä "mit
 
 <h2>After<h2>
 ![Alt text](images/nodejs2.PNG?raw=true "None")
+![Alt text](images/nodejs3.PNG?raw=true "None")
