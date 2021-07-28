@@ -10,7 +10,7 @@ Kuin xyz- tehtävä tehty, ja se jää kuin historiaan ja sitä ei voi kuin pois
 Sekä tähän vaikuttaa for loop funktioon, koska kun yritettään lisätä "mitää pitää tehdä" ja listassa "tehty muuttuu tehdyksi" toiminnaksi. Se ois vähä kuin "tehty" niin itse tarkistaa listasta, ettei tarvi toistaa sitä mitä pitää tehdä
 
 <b>Tämä on vain esimerkki, sitä ehkä tulee editoimaan lisää sitä ulkonäköä vähäsen</b>
-<br><b>Before</b>
+<br><b>Before</b><br>
 ![Alt text](images/nodejs1.PNG?raw=true "None")
 
 <b>After 01</b>
