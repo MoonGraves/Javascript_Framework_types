@@ -6,7 +6,7 @@ Tässä käytetään vain, että pääsovellus hallitsee tai lukaisee muita polk
 Sissältyen oletuksena pääsovelluksen etusivu, mutta tämä on vain raakan, että kuinka tämä toimii. Ja on muita vaihtoehtoisia tapoja, ettei vain mennä tätä tapaa
 
 <b>Default NodeJS home page</b><br>
-![Alt text](images/mvc-1.PNG?raw=true "None") <br>
+![Alt text](images/mvc-01.PNG?raw=true "None") <br>
 
 <b>Nodejs path controller message</b>
-![Alt text](images/mvc-2.PNG?raw=true "None") <br>
+![Alt text](images/mvc-02.PNG?raw=true "None") <br>
