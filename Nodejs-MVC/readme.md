@@ -16,4 +16,5 @@ MVC -osat jakautuu kolmeen osaan eli malliin, näkymään ja käsittelijään.
   Lisää tietoa löytyy mm. wikipediasta tai muista lähteestä, kirjasta ja missä on selostettu vähä syvemmin ja jne.
   </ul>
 
-![Alt text](mvc-architecture.png?raw=true "None")
+![Alt text](mvc-architecture.PNG?raw=true "None")
+![Alt text](mvc-map02.PNG?raw=true "None")
