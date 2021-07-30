@@ -1,4 +1,4 @@
-<h1>Express sivuston video toistin 30.7 </h1>
+<h1>Express sivuston video toistin 30.7.2021 </h1>
 
 Videon toisto mitä käytetään pohjana <b>html</b> tai toista tyyppistä mm. ejs , hbs control flow tyypistä muotoa.
 
