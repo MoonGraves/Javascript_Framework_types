@@ -20,7 +20,7 @@ const bodyParser = require("body-parser")
 const { nanoid } = require("nanoid");
 
 //read exist file/folder
-const db = lowDb(new FileSync('db.json'))
+const db = lowDb(new FileSync('db.json')); //note of data
 const { router } = require("./routes/app");
 
 const app = express();
@@ -81,18 +81,24 @@ const options = {
 	apis: ["./routes/*.js"],
 };
 
+//now home page of the swagger 
 const specs = swaggerJsDoc(options);
-app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
+app.use("/", swaggerUI.serve, swaggerUI.setup(specs));
+
+//TODO: before, if put path api-docs will show the swagger app // app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
+
 
 //antaa käytää apin, polku session, että luoo jonkinlaisen json luettelon, tämä kuin antaa olemassa olevan tiedston julkaista ja käyttää
 app.use("/api", router);
 
-//Default home page
+//TODO: Default home page
+/*
 app.get("/", (req, res) => {
   res.send("Default home page");
 });
+*/
 
-//Show the notes as inside file of the json
+//Show the notes as inside file of the json, tämän http://polku/notes
 app.get('/notes', (req, res) => {
   const data = db.get("notes").value()
   return res.json(data)
