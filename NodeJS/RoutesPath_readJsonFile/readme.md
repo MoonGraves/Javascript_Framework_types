@@ -8,4 +8,4 @@ ja joutuu käsittelee jokaista kohtaa ja toki voi lisätä kommentia, kuin pieni
 
 routes polkussa voi sisältyä useampi polku funktio toiminta, että kuin pääsovellus käsittelee useampaa takana olevia toiminta polkuja kuin esim. mind map
 
-![Alt text](routes-pathMap.PNG?raw=true "None")
+![Alt text](mvc-map01.PNG?raw=true "None")
