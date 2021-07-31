@@ -14,3 +14,18 @@ https://www.mockaroo.com/
 <h3>Tässä sisältyen on tuttu mongodb, joku tietokanta vastaava dokumenttitietokantaohjelmisto </h3>
 Mutta sitäkin on erillisenä harjoituksessa/projektissa, ja pientä editointia
 <b> https://www.mongodb.com/ </b> <br>
+
+<hr>
+
+<h3>Pieni nodejs cheatsheet sivusto</h3>
+Tässä ei ihan kaikkia ole, mutta jotakin pientä muistikuvaa ehkä saattaa herättää & ei tarvi aina muista kaikki koodausta, voi olla pientä muistikuvaakin..
+<ul>
+<li> https://devhints.io/nodejs-stream </li> 
+
+ <li> https://courses.cs.washington.edu/courses/cse154/19su/resources/assets/cheatsheets/node-cheatsheet.pdf </li> 
+
+ <li> https://gist.github.com/LeCoupa/985b82968d8285987dc3 </li> 
+
+ <li> https://overapi.com/nodejs </li> 
+  
+  </ul>
