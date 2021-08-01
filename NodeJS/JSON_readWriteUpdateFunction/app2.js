@@ -68,21 +68,29 @@ the order_count one value added
 //TODO:: another example if change city or something by same action :::
 //change object or give a new name, and new order
 
+//Kysyy käyttäjältä tai antaa käyttäjän antaa iskeä uuden nimen jollekn objektille
+const inputName = prompt("New person name: ");
+const inputCity = prompt("New city name: ");
+
 jsonReader("./customer.json", (err, customer) => {
   if (err) {
     console.log("Error reading file:", err);
     return;
   }
+ //receive input prompt user command, for new name and city names (method 2)
+  customer.city = inputCity;
+  customer.name = inputName;
+ 
   // increase customer order count by 1 & or change object or give a new name
-  customer.city = "Miami";
-  customer.name = "Billy Watson";
+//customer.city = "Miami";
+//customer.name = "Billy Watson";
   fs.writeFile("./customer.json", JSON.stringify(customer, null, 2), err => {
     if (err) console.log("Error writing file:", err);
   });
   
 });
 
-/*
+/* method 1
 >>>> BEFORE <<<<
 {
   "name": "John Doe",
@@ -100,6 +108,27 @@ the order_count one value added
   "order_count": 88,
   "address": "Admin Some Drive",
   "city": "Miami"
+}
+*/
+
+/* method 2
+>>>> BEFORE <<<<
+{
+  "name": "John Doe",
+  "id": 12345,
+  "order_count": 87,
+  "address": "Admin Some Drive",
+  "city": "Texas"
+}
+
+>>>> AFTER <<<<
+the order_count one value added
+{
+  "name": "Christophen Hill",
+  "id": 12345,
+  "order_count": 88,
+  "address": "Admin Some Drive",
+  "city": "London"
 }
 */
 
