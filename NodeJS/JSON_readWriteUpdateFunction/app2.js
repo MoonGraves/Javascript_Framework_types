@@ -102,3 +102,41 @@ the order_count one value added
   "city": "Miami"
 }
 */
+
+//Tässä on toisenlainen kirjoitus, tai kuin tallentaa json formaatin tonne tiedostolle & toki voi kirjoittaa käsin tai kopsata sen
+//Toiminassa funktio luoo uuden json tiedoston nimettynä, ja muuttaa sen luettavaksi, ettei lueta sitä yhteen pötköön
+
+const newObject = {
+  name: 'Newbie Corp',
+  order_count: 123,
+  address: 'Some box Way',
+  city: 'LA'
+}
+
+const jsonString2 = JSON.stringify(newObject);
+const jsonString2Parse = JSON.parse(jsonString2);
+console.log(jsonString2Parse.address);
+
+//Tämä kuin kirjoittaa ton newObject funktion itselle, että muodostaa uutteen json tiedostoon & null, 2 tarkoitta kuin määritystä,
+//että lukaista järkevämpi kuin lukee yhteenpötköön
+
+fs.writeFile("./newCustomer.json", JSON.stringify(newObject, null, 2), err => {
+  if(err) {
+    console.log(err);
+  } else { 
+    console.log("File success");
+  }
+});
+
+/*
+newCustomer.json
+
+{
+  "name": "Newbie Corp",
+  "order_count": 123,
+  "address": "Some box Way",
+  "city": "LA"
+}
+
+
+*/
