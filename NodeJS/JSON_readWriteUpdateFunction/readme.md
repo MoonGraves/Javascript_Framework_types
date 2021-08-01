@@ -1,4 +1,4 @@
-<h1>Nodejs määrityksen JSOn tiedostojen muutosta 31.7.2021 </h1>
+<h1>Nodejs määrityksen JSON tiedostojen muutosta 31.7.2021 </h1>
 
 Tässä vähä kerrotaan muutama nodejs funktiota ja parametriä, että kuinka voidaan tulostaa json tiedoston polkua ja tämä tiedosto on kuin olemassa.
 Erillisenä, vähä tutustutaan <b> json tiedoston kirjoittamista, päivitystä ja jne </b> jokaisen toiminassa vähä kulkeutuu eri methodi, mutta toiminta on melko sama..
