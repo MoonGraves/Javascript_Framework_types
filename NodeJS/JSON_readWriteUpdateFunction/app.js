@@ -1,6 +1,7 @@
 //Tässä muutama esimerkki js funktiosta, että kuinka lukaisee json tiedoston ja output, mitä ne tulostaa siinä komentolähteessä
 //Osassa saattaa olla melko sama methodi, mutta toiminnaltaan oikein 
 
+//TODO type 1
 const fs = require("fs");
 
 try {
@@ -21,7 +22,7 @@ Texas
 */  
 
 ///////////////////////////////
-
+//TODO type 2
 const fs = require("fs");
 
 fs.readFile("./customer.json", "utf8", (err, jsonString) => {
@@ -41,7 +42,7 @@ File data: {
 */
 
 ///////////////////////////////
-
+//TODO type 3
 const fs = require("fs");
 
 fs.readFile("./customer.json", "utf8", (err, jsonString) => {
@@ -61,7 +62,7 @@ Texas
 */
 
 ///////////////////////////////
-
+//TODO type 4
 const fs = require("fs");
 
 fs.readFile("./customer.json", "utf8", (err, jsonString) => {
@@ -90,7 +91,7 @@ Texas
 
 
 ///////////////////////////////
-
+//TODO type 5
 const fs = require("fs");
 
 try {
@@ -120,7 +121,7 @@ Some box Way
 */
 
 ///////////////////////////////
-
+//TODO type 6
 const fs = require('fs');
 const path = require('path');
 
@@ -134,7 +135,7 @@ output::
 */
 
 ///////////////////////////////
-
+//TODO type 7
 
 const fs = require("fs");
 
