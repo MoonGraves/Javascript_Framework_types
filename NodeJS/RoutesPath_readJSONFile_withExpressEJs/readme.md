@@ -6,5 +6,6 @@ ja tässä käytettään yhä routes polkua, ja json tiedoston lukemista. JSON t
 Express eli verkkosivustossa hyödynnettään ejs, mikä pohjautuu html toiminta ja sisäisen funktiossa yritettään tulostaa JSOn tiedoston tekijänssä dataa.
 Esim. tällainen JSON tiedostoa::
 <br>
+![Alt text](images/RoutesPath-JSON1.PNG?raw=true "None")
 
-![Alt text](Image/RoutesPath-JSON1.PNG?raw=true "None")
+Että esim yritettäisi tulostaa verkkosivustossa mm. otsikko ja nimet listattuna
