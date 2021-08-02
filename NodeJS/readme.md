@@ -9,6 +9,8 @@ käynnissä oleva sovelluksen ladattujen paketin versiot, että mitä kaikea sis
 https://www.postman.com/
 <br><hr>
 <b> random json tiedoston luominen </b> <br>
+Teossa pitää vähä huomioida, että minkä tiedosto tyyppin lataa, koska voi käyttää mm. excel, json, xml, SQL ja jne. mitä tällä sivustolla on tarjolla.
+Lisäksi "rows" tarkoittaa monta tyypistä tätä objektia halutaan kuin tulostaa/tehdä esim. yhdelle henkilöllä on etu- ja sukunimi, sposti, gender, id-tunnus, ipv4 ja jne...
 https://www.mockaroo.com/
 
 <h3>Tässä sisältyen on tuttu mongodb, joku tietokanta vastaava dokumenttitietokantaohjelmisto </h3>
