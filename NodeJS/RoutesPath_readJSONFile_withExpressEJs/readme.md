@@ -10,6 +10,10 @@ Esim. tällainen JSON tiedostoa::
 <br>
 
 <b>Että esim yritettäisi tulostaa verkkosivustossa mm. otsikko ja nimet listattuna</b>
+
+<b>Default ejs home page with json data object </b>
+![Alt text](images/RoutesPath-indexEjs.PNG?raw=true "None")
+
 <br>
 <img src ="images/RoutesPath-JSON1.PNG" width = 350 >
 
