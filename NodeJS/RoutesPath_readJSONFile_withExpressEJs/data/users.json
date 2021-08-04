@@ -1,0 +1,80 @@
+{
+  "peopleTitle": "JSON Users",
+  "peopleData": [
+      {
+        "name": "King Arthur",
+        "password": "password1",
+        "profession": "king",
+        "id": 1
+      },
+      {
+        "name": "Rob Kendal",
+        "password": "password3",
+        "profession": "code fiddler",
+        "id": 2
+      },
+      {
+        "name": "Teresa May",
+        "password": "password2",
+        "profession": "brexit destroyer",
+        "id": 6
+      }
+  ],
+
+  "peopleToinenTitle": "JSON User toinen",
+  "peopleToinenData": [
+      {
+       "name": "Marjory Flory",
+       "password": "PnXg01k8W",
+       "profession": "Nanjing",
+       "id": 10
+      },
+      {
+       "name": "Carlynn Raynard",
+       "password": "gwn0h4D",
+       "profession": "Borås",
+       "id": 20
+      },
+      {
+       "name": "Sibby Nicole",
+       "password": "4QLaIFJi8",
+       "profession": "Dayr Dibwān",
+       "id": 60
+      }
+  ],
+
+  "peopleKolmasTitle" : "Kolmas User",
+  "peopleKolmasData": [
+    {
+      "name": "Hillier Caudrelier",
+      "password": "5YwyFBZbdcY",
+      "profession": "Pristen",
+      "phone": {
+        "office" : "629-555-7655",
+        "home": "682-190-0671"
+      },
+      "id": 110
+    },
+    {
+      "name": "Yolanda Messum",
+      "password": "N7fshyIgZQsQ",
+      "profession": "Kralice na Hané",
+      "phone": {
+        "office" : "123-178-2521",
+        "home": "391-334-3606"
+      },
+      "id": 120
+    },
+    {
+      "name": "Clayton Boycott",
+      "password": "HMXLqZe",
+      "profession": "Beloeil",
+      "phone": {
+        "office" : "464-676-4539",
+        "home": "168-594-4511"
+      },
+      "id": 150
+    }
+  ]
+
+}
