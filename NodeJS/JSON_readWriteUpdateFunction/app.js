@@ -1,5 +1,5 @@
 //Tässä muutama esimerkki js funktiosta, että kuinka lukaisee json tiedoston ja output, mitä ne tulostaa siinä komentolähteessä
-//Osassa saattaa olla melko sama methodi, mutta toiminnaltaan oikein 
+//Osassa saattaa olla melko sama methodi, mutta toiminnaltaan oikea suunta & sekä erillisenä määritettään objekti tekijä, että mitä tiettyä halutaan kuin lukaista ja nähdä komentolähteessä 
 
 //TODO type 1
 const fs = require("fs");
