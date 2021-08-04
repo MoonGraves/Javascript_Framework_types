@@ -12,3 +12,5 @@ Esim. tällainen JSON tiedostoa::
 <b>Että esim yritettäisi tulostaa verkkosivustossa mm. otsikko ja nimet listattuna</b>
 <br>
 <img src ="images/RoutesPath-JSON1.PNG" width = 350 >
+
+<img src="images/RoutesPath-JSON2.PNG" width = 325 >
