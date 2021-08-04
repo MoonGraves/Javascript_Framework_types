@@ -107,17 +107,26 @@ const newObject = {
   name: 'Newbie Corp',
   order_count: 123,
   address: 'Some box Way',
-  city: 'LA'
+  city: 'LA',
+  phone: {
+    office : "office num: 464-676-4539",
+    home: "home num: 168-594-4511"
+  }
 }
 
+//käsittelee tuota toista json dataa (newObject) jokaista objektia erikseen
 const jsonString2 = JSON.stringify(newObject);
 const jsonString2Parse = JSON.parse(jsonString2);
-console.log(jsonString2Parse.address);
+console.log("\n" + jsonString2Parse.address);
+
+console.log(jsonString2Parse.phone.office);
 
 /*
 output::
 Texas
+
 Some box Way
+office num: 464-676-4539
 */
 
 ///////////////////////////////
