@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>Index EJS</title>
+
+  <!-- Compiled and minified CSS & editointia-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </head>
+
+<body>
+
+<!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <h2> Blah blah </h2>  
+  <h3> This is routes file </h3>
+
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus fermentum eros, ac faucibus libero rutrum vel. Nam eu urna id lectus varius pulvinar. Nunc auctor, lorem at ultrices gravida, quam sem blandit metus, et viverra urna ligula sed elit. Nam fermentum accumsan mollis. Donec tempus ligula et leo dignissim, at facilisis nisl egestas. Proin ac nulla ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse tincidunt purus ex, eget ultrices diam porttitor non. Quisque et risus consectetur, dapibus ex a, laoreet ex. </p>
+
+  <h2> <%= classUsers.peopleTitle %> + <%= classUsers.peopleToinenTitle %></h2>
+  <p> Tämä on eka listat:: <br>
+  <% classUsers.peopleData.forEach(function(item) { %> 
+    <li> <%= item.name + "\t" + item.password %> </li>
+      <% }); %>
+  </p>
+
+  <br>
+  <b> Toinen lista:: </b> 
+  <p>
+  <% classUsers.peopleToinenData.forEach(function(item) { %> 
+    <li> <%= item.name %> </li>
+      <% }); %>
+  </p>
+
+  <br>
+  <b> Kolmas lista:: </b> 
+  <p>
+  
+  <% classUsers.peopleKolmasData.forEach(function(item) { %> 
+    <li> <%= item.name + "\t" + item.phone.home %> </li>
+
+  <% }); %>
+  </p>
+  
+
+</body>
+</html>
