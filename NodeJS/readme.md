@@ -14,7 +14,7 @@ Lisäksi "rows" tarkoittaa monta tyypistä tätä objektia halutaan kuin tulosta
 https://www.mockaroo.com/
 
 <h3>Tässä sisältyen on tuttu mongodb, joku tietokanta vastaava dokumenttitietokantaohjelmisto </h3>
-Mutta sitäkin on erillisenä harjoituksessa/projektissa, ja pientä editointia
+Mutta sitäkin on erillisenä harjoituksessa/projektissa, ja pientä editointia & osassa jotakin toimii ja jotakin ei <br>
 <b> https://www.mongodb.com/ </b> <br>
 
 <hr>
