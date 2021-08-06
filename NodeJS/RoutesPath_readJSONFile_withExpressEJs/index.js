@@ -22,6 +22,11 @@ app.locals.classUsers = require('./data/users.json');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+//Tähän voisi kokeilla esim. pääsovellus vastaanottaa url json datat ja siitä julkaisee itse erillisenä polkuna tiedostossa
+app.get("/about", (req, res ) => {
+  res.render("about");
+});
+
 //consider routes path folder/files, it will set to default home page
 const routes = require('./routes/routes.js')(app, fs);
 
