@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+</head>
+<body>
+  
+  <h2>Blah About</h2>
+
+  <p>Email listat:: <span id="dataEmail"></span>
+  <div id="artistList"</div>
+
+  <div id="staticUrlJSON"</div>
+
+  </p>
+
+  <script>
+  function displayBridge() {
+
+   // create JSON data
+  var dataBridge = 
+    {
+      "Bridges" : [
+        { 
+          "bridgename" : "Golden Gate Bridge",
+          "city" : "San Francisco",
+          "country": "USA"
+          },
+        { 
+          "bridgename" : "Sydney Harbour Bridge",
+          "city" : "Sydney",
+          "country": "Australia"
+          },
+        { 
+          "bridgename" : "Ponte Vecchio",
+          "city" : "Florence",
+          "country": "Italy"
+          }
+      ]
+    }
+
+    // Put the data into a variable and format with HTML tags
+    var output = "<h3>Names: </h3>";
+    output += "<ul>";    
+    
+    //for loop function and names the read json data object title and ect.
+    for (var i in dataBridge.Bridges) {
+        output += "<li>" + dataBridge.Bridges[i].bridgename + "(City:" + dataBridge.Bridges[i].city + " , " + dataBridge.Bridges[i].country + ") </li>"; 
+    }
+    
+    output += "</ul>";
+
+    // Output the data to the "title" element
+    document.getElementById("artistList").innerHTML=output;
+
+    /////////////TODO:: toinen homma ////////////
+    var staticUrl = 'https://jsonplaceholder.typicode.com/comments'
+
+    $.getJSON(staticUrl, function(data2) {
+      //this is the code for the function and some action
+      console.log("some function");
+      //console.log(data);   
+
+      //print out every object of item (emails) & tän for loop määritys tarkoittaa, että tulostettaan jokaisen json datat mitä sisällä onkaan 
+      /*
+      for (i = 0; i < data2.length; i = i + 1) {
+        console.log(data2[i].email);
+      }*/
+   
+    });
+}
+
+window.onload = displayBridge;
+  </script>
+
+</body>
+</html>
