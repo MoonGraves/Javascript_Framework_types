@@ -4,6 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const app = express();
+const request = require("request");
 
 //loading node's file systems
 const fs = require('fs');
@@ -17,9 +18,13 @@ app.use(cookieParser());
 //lukaisee/käsittelee olemassa olevan kansion ja sisäisen tiedoston json muodon & ja ejs kohdassa pitää määrittää sama tekijä, että tämä on kuin kohde osoite
 app.locals.classUsers = require('./data/users.json');
 
+//configure our express instance with some body-parser settings
+//including handling JSON datas
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 //TODO:: JSON formaatti url linkki
 const urlData = "https://jsonplaceholder.typicode.com/posts/2"
-
 
 request({
     url: urlData,
