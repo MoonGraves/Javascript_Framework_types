@@ -1,4 +1,4 @@
-//TÄMÄ ON PÄÄSOVELLUS & SERVER
+//TÄMÄ ON PÄÄSOVELLUS
 // load up the express framework and body-parser helper
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -25,6 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //TODO:: JSON formaatti url linkki
 const urlData = "https://jsonplaceholder.typicode.com/posts/2"
+
 
 request({
     url: urlData,
@@ -58,6 +59,3 @@ const routes = require('./routes/routes.js')(app, fs);
 const server = app.listen(8080, () => {
   console.log('Server is running %s...', server.address().port);
 });
-
-
-
