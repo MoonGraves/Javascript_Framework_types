@@ -13,15 +13,12 @@
   
   <h2>Blah About</h2>
 
-  <p>Email listat:: <span id="dataEmail"></span>
   <div id="artistList"</div>
-
-  <div id="staticUrlJSON"</div>
-
   </p>
 
-  <script>
-  function displayBridge() {
+<script>
+
+function displayBridge() {
 
    // create JSON data
   var dataBridge = 
@@ -31,50 +28,61 @@
           "bridgename" : "Golden Gate Bridge",
           "city" : "San Francisco",
           "country": "USA"
-          },
+        },
         { 
           "bridgename" : "Sydney Harbour Bridge",
           "city" : "Sydney",
           "country": "Australia"
-          },
+        },
         { 
           "bridgename" : "Ponte Vecchio",
           "city" : "Florence",
           "country": "Italy"
-          }
+        }
       ]
     }
 
     // Put the data into a variable and format with HTML tags
-    var output = "<h3>Names: </h3>";
-    output += "<ul>";    
+    var outputData = "<h3>Names: </h3>";
+    outputData += "<ul>";    
     
     //for loop function and names the read json data object title and ect.
     for (var i in dataBridge.Bridges) {
-        output += "<li>" + dataBridge.Bridges[i].bridgename + "(City:" + dataBridge.Bridges[i].city + " , " + dataBridge.Bridges[i].country + ") </li>"; 
+        outputData += "<li>" + dataBridge.Bridges[i].bridgename + "(City:" + dataBridge.Bridges[i].city + " , " + dataBridge.Bridges[i].country + ") </li>"; 
     }
     
-    output += "</ul>";
+    outputData += "</ul>";
 
     // Output the data to the "title" element
-    document.getElementById("artistList").innerHTML=output;
+    document.getElementById("artistList").innerHTML = outputData;
+
+} //function displayBridge ENDS HERE
 
     /////////////TODO:: toinen homma ////////////
-    var staticUrl = 'https://jsonplaceholder.typicode.com/comments'
+    /*https://www.quackit.com/json/tutorial/json_with_javascript.cfm
+    https://www.quackit.com/html/html_editors/scratchpad/?example=/json/tutorial/json_with_javascript_example
+
+    https://coursesweb.net/javascript/convert-json-javascript
+
+    https://idratherbewriting.com/learnapidoc/docapis_access_json_values.html
+
+    */
+
+    var staticUrl = 'https://jsonplaceholder.typicode.com/comments/'
 
     $.getJSON(staticUrl, function(data2) {
       //this is the code for the function and some action
-      console.log("some function");
+      //console.log("some function");
       //console.log(data);   
 
-      //print out every object of item (emails) & tän for loop määritys tarkoittaa, että tulostettaan jokaisen json datat mitä sisällä onkaan 
+      //print out every object of item (emails) & tän for loop määritys tarkoittaa, että tulostettaan jokaisen json datat mitä sisällä onkaan (toimii, mutta turhan pitäkin)
+
       /*
       for (i = 0; i < data2.length; i = i + 1) {
         console.log(data2[i].email);
       }*/
-   
     });
-}
+
 
 window.onload = displayBridge;
   </script>
