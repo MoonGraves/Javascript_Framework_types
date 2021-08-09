@@ -55,12 +55,13 @@ const options = {
           url: 'http://www.apache.org/licenses/LICENSE-2.0.html',
       },
 		},
-
+		
+//tämän url pitää täsmätä tämän repl.it mukaan, normaalisti se olisi localhost:8080
 		servers: [{
-				url: "https://routes-swaggermethod3type-project.zhaotan18x.repl.co/",
-        description: "API of the system"
-			},
-		],
+		url: "https://routes-swaggermethod3type-project.zhaotan18x.repl.co/",
+        	description: "API of the system"
+		},
+	],
 
     components: {
       securitySchemes: {
@@ -81,9 +82,9 @@ const options = {
 	apis: ["./routes/*.js"],
 };
 
-//now home page of the swagger 
+//now home page of the swagger & {explorer: true} , tämä on kuin haku palkki, että siinä on boxi että käyttäjä voi syöttää jotakin sinne haku kohteeseen
 const specs = swaggerJsDoc(options);
-app.use("/", swaggerUI.serve, swaggerUI.setup(specs));
+app.use("/", swaggerUI.serve, swaggerUI.setup(specs, { explorer: true } ));
 
 //TODO: before, if put path api-docs will show the swagger app // app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
 
