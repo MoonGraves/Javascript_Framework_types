@@ -37,31 +37,32 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json())
 
-
+//Alku oman ominaisuudet esim. tämän sovelluksen yrityksen nimi, versio ja muu yhteystiedot, avainsanat tai # jostakin kuvauksesta/infosta ja jne.
 const options = {
 	definition: {
 		openapi: "3.0.0",
 		info: {
         title: 'Mynthix June 2021',
+        termsOfService: "http://swagger.io/terms/",
         version: '1.0.4',
-            description: "Mynthix API infot",
-            contact: {
+            description: "Mynthix API infot & More about Swagger at [http://swagger.io] (http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/). \n This is sample description, something about the api key `special-key` & `nodejs js`to test the authorization filters.",
+        contact: {
               name: "Mynthix Oy",
               url: 'https://Mynthix.net',
               email: 'Mynthix@yahoo.com',
-            },
+        },
         license: {
           name: 'Apache 2.0',
           url: 'http://www.apache.org/licenses/LICENSE-2.0.html',
       },
 		},
-		
-//tämän url pitää täsmätä tämän repl.it mukaan, normaalisti se olisi localhost:8080
+
+//tämän url pitää täsmätä tämän repl.it mukaan, normaalisti se olisi localhost:8080   
 		servers: [{
-		url: "https://routes-swaggermethod3type-project.zhaotan18x.repl.co/",
-        	description: "API of the system"
-		},
-	],
+				url: "https://routes-swaggermethod3type-project.zhaotan18x.repl.co/",
+        description: "API of the system"
+			},
+		],
 
     components: {
       securitySchemes: {
