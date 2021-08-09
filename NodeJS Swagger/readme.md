@@ -9,11 +9,10 @@ Käyttäjä/asiakas/tekijä voi kuin lukaista, julkaista, poistaa tai jättää 
 Tässä ohjelmisto sisältyy automaatioidun dokumentaation , koodien generaattori (useille ohjelmointikielelle) ja testitapauksen generaattoriin
 
 Ainii jokaisen näissä kansion sisällä toi readme.md on päiväys, että milloin nämä ohjelmat on luotu
-
-
+  
 ![Alt text](SwaggerJS-1.PNG?raw=true "None")
 
-<b>RESTful api image</b>
+<b>RESTful api image</b> <br>
 ![Alt text](Restful-1.PNG?raw=true "None")
 
   <h2>Kaksi versiota</h2>
