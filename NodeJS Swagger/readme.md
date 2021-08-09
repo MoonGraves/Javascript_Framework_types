@@ -15,3 +15,8 @@ Ainii jokaisen näissä kansion sisällä toi readme.md on päiväys, että mill
 
 <b>RESTful api image</b>
 ![Alt text](Restful-1.PNG?raw=true "None")
+
+  <h2>Kaksi versiota</h2>
+ 
+  Tähän jakautuu kahteen versioon, mitä on vain 2.0 ja 3.0 & Alkuperäisen versio oli 2.0 mitä kehittyi kohti 3.0:lle. Jotakin sisäisen rakenteen muutosta on kehittynyt alemman kuvan mukaan. Osa tässä malli harjoituksissa on molemmat, mutta tämä versio ei mitenkään liitty toimintaan. Koska se on vain kuin kaavio malli esitys kuviona, että tässä ohjelmassa pyöritettään tällä versiolla 3.0 tai 2.0. 
+![Alt text](swagger-versionsDiff.PNG?raw=true "None")
