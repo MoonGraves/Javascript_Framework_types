@@ -18,3 +18,9 @@ curl http://localhost:8080/notes
 
 tai vaihtoehtoisena on toistaa sitä toisessa välilehdessä, riittää oman localhost osoitteen eli..;;; 
 localhost:8080/notes
+
+linkki ja yms ohjeet, mitä voi olla apua ja pientä vinkkiä:::
+
+https://blog.logrocket.com/documenting-your-express-api-with-swagger/
+
+https://www.section.io/engineering-education/documenting-node-js-rest-api-using-swagger/
