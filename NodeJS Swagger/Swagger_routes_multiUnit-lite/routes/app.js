@@ -1,6 +1,7 @@
+//THIS IS SWAGGER SETTINGS AND RESTful THINGS
 //Swagger RESTful actions (POST, GET, PUT & DELETE)
 
-//datoille tai nimitykselle pitää olla aina tyyppi, että onko kyse teksti, kirjain, tosi/taru ja jne. lisää tietoa: https://swagger.io/docs/specification/data-models/data-types/
+//datalle tai objetille/nimitykselle pitää olla aina tyyppi, että onko kyse teksti, kirjain, tosi/taru ja jne. lisää tietoa: https://swagger.io/docs/specification/data-models/data-types/
 
 const express = require("express");
 const router = express.Router();
@@ -17,14 +18,17 @@ tämä julkaistuu sinne sivustolle,;
 {"name":"ideapad"}
 */
 
-//Toinen tag START HERE:: & pieni testaus, muuten menee edellisen tag mukaan, jos on useita toimintoja
+//TODO: Toinen tag START HERE:: & pieni testaus, muuten menee edellisen tag mukaan, jos on useita toimintoja
 //Otsikko / väliotsikko & tummennettu teksti
 
 /**
  * @swagger
  * tags:
  *  names: MainData
- *  description: This is just main data
+ *  description: Just main data info
+ *  externalDocs:
+ *    description: "Find out more "
+ *    url: "http://swagger.io"
  * /api/getData:
  *  get:
  *      tags: [MainData]
@@ -46,6 +50,7 @@ tämä julkaistuu sinne sivustolle,;
  *          default:
  *              description: This is the default responses item
  */
+//oletus sivuna avautuisi tämä swagger ui homma, mutta toki voidaan polkuun lisätä /getdata , mitä avautuu sama sivusto
 router.get("/getData", (req, res) => {
   const {page_number, page_length} = req.query;
 
@@ -152,7 +157,7 @@ router.post('/saveData', (req,res) => {
     res.status(201).send('saved success');
 });
 
-//->>>>>>>> TÄSSÄ ALKAA TOINEN TAG <<<<<<<<<
+//->>>>>>TODO:: TÄSSÄ ALKAA TOINEN TAG <<<<<<<
 //TOINEN tag START HERE:: & pieni testaus, muuten menee edellisen tag mukaan, jos on useita toimintoja
 //Otsikko / väliotsikko & tummennettu teksti
 /**
@@ -290,7 +295,7 @@ router.delete('/deleteBooks', (req, res) => {
 });
 
 
-//>>>>TÄSSÄ ALKAA LUKAISTA TIEDOSTON data.js TIETOKANNAN<<<<<
+//>>>>TODO:: TÄSSÄ ALKAA LUKAISTA TIEDOSTON data.js TIETOKANNAN<<<<<
 
 /*tässä käytettään bodyParser, mitä kuin lukaisee sovelluksen avattuna laatikosta täydentävien lomakkeen, että esim. haettaan id tai halutaan muokata + julkaista jotakin tietokannan asiaa, samaan tähän pitää olla req.body - ominaisuus olla mukana.
 
@@ -458,9 +463,9 @@ router.delete("/:id", (req, res) => {
   }
 });
 
-//----->>>>>>Schema malli kaaviot START HERE<<<<<<<------
+//--->>>>> TODO:: Schema malli kaaviot START HERE<<<<<----
 
-/*Schema komponentti dia & esimerkki malli kaaviot,, mikä tulee alimmaksi noita RESTful toiminnasta. Toi pieni mallinnus on kuin, että näin tehdään tämä RESTful toimintoja & ja tämä on oma ikkuna malli/kaavio
+/*Schema komponentti dia & esimerkki malli kaaviot,, mikä tulee alimmaksi noita RESTful toiminnasta. Toi pieni mallinnus on kuin, että näin tehdään tämä RESTful toimintoja & ja tämä on oma ikkuna malli/kaavio, esim. näin täytät tämmöstä lomaketta ja yms kuin tietokanta. Lisäksi tämä menee järjestyksessä eli mikä on ensimmäinen, toinen ja jne järjestys muodossa. Jokaisen mallissa on sisäisen oma mallinnus, että tällainen formaatti ja jne.
 */
 
 /**
@@ -505,7 +510,7 @@ router.delete("/:id", (req, res) => {
 //---------------------------------------------
 
 //---------------------------------------------
-/*Schema komponentti dia & esimerkki malli kaaviot, mikä tulee alimmaksi noita RESTful toiminnasta. Toi pieni mallinnus on kuin, että näin tehdään tämä RESTful toimintoja & ja tämä on oma ikkuna malli/kaavio
+/*Schema komponentti dia & esimerkki malli kaaviot,, mikä tulee alimmaksi noita RESTful toiminnasta. Toi pieni mallinnus on kuin, että näin tehdään tämä RESTful toimintoja & ja tämä on oma ikkuna malli/kaavio, esim. näin täytät tämmöstä lomaketta ja yms kuin tietokanta.
 */
 /**
 *  @swagger
@@ -552,7 +557,9 @@ router.delete("/:id", (req, res) => {
 //---------------------------------------------
 
 //---------------------------------------------
-//Schema komponentti dia & esimerkki malli kaaviot,, mikä tulee alimmaksi noita RESTful toiminnasta. Toi pieni mallinnus on kuin, että näin tehdään tämä RESTful toimintoja & ja tämä on oma ikkuna malli/kaavio
+/*Schema komponentti dia & esimerkki malli kaaviot,, mikä tulee alimmaksi noita RESTful toiminnasta. Toi pieni mallinnus on kuin, että näin tehdään tämä RESTful toimintoja & ja tämä on oma ikkuna malli/kaavio, esim. näin täytät tämmöstä lomaketta ja yms kuin tietokanta.
+*/
+
 /**
  * @swagger
  * components:
@@ -586,5 +593,44 @@ router.delete("/:id", (req, res) => {
  *
  */
 //---------------------------------------------
+
+/*Schema komponentti dia & esimerkki malli kaaviot,, mikä tulee alimmaksi noita RESTful toiminnasta. Toi pieni mallinnus on kuin, että näin tehdään tämä RESTful toimintoja & ja tämä on oma ikkuna malli/kaavio, esim. näin täytät tämmöstä lomaketta ja yms kuin tietokanta
+*/
+/**
+ * 
+ * @swagger
+ * components:
+ *   schemas:
+ *     Order:
+ *       type: object
+ * 
+ *       properties:
+ *         id:
+ *          type: integer
+ *          format: int64
+ *         pcId:
+ *          type: integer
+ *          format: int64
+ *         quantify:
+ *          type: integer
+ *          format: int62
+ *         shipDate:
+ *          type: string
+ *          format: date-time
+ * 
+ *         status:
+ *          type: string
+ *          description: Order Status and Info
+ *          enum:
+ *           - placed
+ *           - approved
+ *           - delivered
+ *           - missing
+ * 
+ *         complete:
+ *          type: boolean
+ *          default: false
+ * 
+ */
 
 module.exports = { router };
