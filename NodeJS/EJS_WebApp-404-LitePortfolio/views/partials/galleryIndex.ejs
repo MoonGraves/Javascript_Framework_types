@@ -1,0 +1,62 @@
+<!--INDEX GALLERY HOMEPAGE GALLERY SLIDESHOW -->
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.content {
+  height: 360px;
+  width: 560px;
+  overflow: hidden;
+  box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.4);
+}
+
+.content .images {
+  height: 100%;
+  width: 100%;
+}
+
+.images img {
+  height: 100%;
+  width: 100%;
+}
+
+</style>
+
+<div class="content">
+  <div class="images">
+    <img src="../images/bridge-1.jpg">
+
+    <img src="../images/bridge-2.jpg">
+
+    <img src="../images/bridge-3.jpg">
+    
+  </div>
+</div>
+
+<script>
+var indexValue = 0;
+function slideShow() {
+  setTimeout(slideShow, 2500); //kuvan vaihto n. 2.5s
+  var x;
+  const img = document.querySelectorAll("img");
+
+  for(x = 0; x < img.length; x++ ){
+    img[x].style.display = "none"
+  }
+
+  indexValue++;
+
+  if( indexValue > img.length)
+    {indexValue = 1}
+  img[indexValue - 1].style.display = "block";
+  
+}
+
+slideShow();
+
+</script>
