@@ -1,0 +1,87 @@
+<!--Blog page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<body class="container">
+<!--BLOG aiheita & yms:::
+-tämä on BLOG-2 sivu
+
+ -->
+
+<!-- valikkot home/about/ ja jne-->
+<main>
+  <div class="jumbotron">
+    <h1>Blog pages</h1>
+    <p>Welcome to read Blogs stories</p>
+    <img src="../images/img-space1.jpg" alt="BridgeView" width="480" height="380"></img> 
+  </div>
+
+<!--Oma bloggi aihe (1) -->
+<div class="row">
+  <div class="col-sm-8">
+    <div class="jumbotron-2">
+      <h1>Mikä maa?</h1>
+      <p>Kirjoita tänne jotakin</p>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="well">
+      <h3>Moi! </h3>
+        <p>Tilaa Pizza peperonia?</p>
+
+    </div>
+  </div>
+</div>
+
+<!--Oma bloggi aihe (2 ja jne) -->
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas orci nisl, porttitor consectetur lacus sit amet, maximus convallis nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+    </div>
+    
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, May 2, 2018</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas orci nisl, porttitor consectetur lacus sit amet, maximus convallis nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+    </div>
+  </div>
+
+</main>
+
+<%- include('../partials/blog-2'); %>
+
+<!-- Bloggien sivu määrä, ettei tarvi julkaista ihan kaikkia -->
+<div style="text-align: center; margin: auto; background-color: #e6e6e6;">
+  <section>
+    <p>Skip the pages</p>
+    <a href="blog">1</a>
+    <a href="#"><u>2</u></a>
+    <a href="blog-3">3</a>
+    <a href="blog-4">4</a>
+  </section>
+</div>
+<br>
+
+<!-- Copyright homma-->
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
