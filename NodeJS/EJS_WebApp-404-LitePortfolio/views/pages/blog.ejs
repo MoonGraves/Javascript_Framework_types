@@ -1,0 +1,97 @@
+<!--Blog page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<body class="container">
+<!--BLOG aiheita & yms:::
+- tänne voisi kirjoittaa aihe juttuja esim. abc/projekti - aihe, teksti, kuva ja pv.kk.yyyy
+
+- jos on paljo aihetta, jotakin ylimääräistä aihetta voisi viedä toiselle sivulle. esim yhteen sivuun  n. 3-5 aihetta 
+
+ -->
+
+<!-- valikkot home/about/ ja jne-->
+<main>
+  <div class="jumbotron">
+    <h1>Blog pages</h1>
+    <p>Welcome to read Blogs stories</p>
+    <img src="../images/2807884.jpg" alt="BridgeView" width="480" height="380"></img> 
+  </div>
+
+<!--Oma bloggi aihe (1) -->
+<div class="row">
+  <div class="col-sm-8">
+    <div class="jumbotron">
+      <h1>Keksi tänne jotakin</h1>
+      <h5>Kuvaus teksti 11.12.2013</h5>
+      <p>Meikä vihaa maanantaia</p>
+
+      <img src="../images/1211998.PNG" alt="Comics1" width="720" height="260"></img> 
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="well">
+      <h3>Hei! Oikeallesi!</h3>
+        <p>Pilasitko mun ruokahaluni?</p>
+
+        <h4>Tilaukset: </h4>
+        <ul>
+          <li>Peruna</li>
+          <li>Jauheliha</li>
+          <li>Salaattia</li>
+        </ul>
+
+    </div>
+  </div>
+</div>
+
+<!--Oma bloggi aihe (2 ja jne) -->
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+
+</main>
+
+<!-- Bloggien sivu määrä, ettei tarvi julkaista ihan kaikkia -->
+<div style="text-align: center; margin: auto; background-color: #e6e6e6;">
+  <section>
+    <p>Skip the pages</p>
+    <a href="#"><u> 1 </u></a>
+    <a href="blog-2">2</a>
+    <a href="blog-3">3</a>
+    <a href="blog-4">4</a>
+  </section>
+</div>
+<br>
+
+<!-- Copyright homma-->
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
