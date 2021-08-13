@@ -1,0 +1,70 @@
+<!-- About pages -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<header>
+  <%- include('../partials/header', {variant: 'compact'}); %>
+</header>
+
+<body class="container">
+<!--ABOUT sivu
+- tänne voisi kirjoittaa itsestä pikasen, lisätä yhden kuvan & oma tilanne (koulutus as opiskelija, työssä tai muu)
+
+-vahvuudet ja hyvä missäkin tekniikassa
+
+-sosiaaliset mediat, linkedin, github ja jne (ei ihan kaikkia, mutta osat linkkeistä)
+ -->
+
+
+<!-- Tässä jaukuu kahteen osaan palikkaan riviin-->
+<main>
+<div class="row">
+  <div class="col-sm-8">
+    <div class="jumbotron">
+      <h1>This is About</h1>
+      <p>Welcome to templating using EJS</p>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="well">
+      <h3>Hei! Katso tänne!</h3>
+        <p>Pilasitko mun ruokahaluni?</p>
+    </div>
+  </div>
+</div>
+</main>
+
+<!--Toinen about laatikko alempana -->
+<div class="row">
+  <div class="col-sm-12">
+    <div class="jumbotron">
+      <h1>This is asdf</h1>
+      <p>Welcome to templating using EJS</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+   <div class="jumbotron">
+      <h1>This is qwerty</h1>
+      <p>Qwerty asdfghjk </p>
+    </div>
+
+  <div class="col-sm-4">
+    <div class="well">
+      <h3>Hei! adsf zcxv!</h3>
+        <p>Pilasitko mun ruokahaluni?</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
