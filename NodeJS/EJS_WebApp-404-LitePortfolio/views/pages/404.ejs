@@ -1,0 +1,32 @@
+<!-- 404 sivuston lisää editointia
+https://freefrontend.com/html-css-404-page-templates/ -->
+<!-- Tän sovelluksen/sivuston polkuun lisäätään jotakin muutta /päläpälä niin oletuksena avautuu virhe sivusto, koska ei väliä mitäkin haettaan polku sivustoa tai aihetta, niin sellaista ei ehkä löydy & esim. sivustoa ei ole luotu, ei löydy tai muu syy, tämä on oletus 404 virhe sivusto -->
+
+<html>
+
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<header>
+  <%- include('../partials/header', {variant: 'compact'}); %>
+</header>
+
+<body class="container">
+
+<main>
+  <div class="jumbotron">
+  <h1>404</h1>
+    <h2>Error pages! </h2>
+      <p>Maybe this page moved? Got deleted? Is hiding out in quarantine? Never existed in the first place?<p>Let's go <a href="/">Home</a> and try from there.</p>
+  </div>
+</main>
+
+<!--Takaisin etusivussa node.js:ssä käytetään / (kautta), koska sieltä app.use on määritetty, että tämä on kotisivu, normaalisti kait menee koko file nimi eli (index.html) kait... -->
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
