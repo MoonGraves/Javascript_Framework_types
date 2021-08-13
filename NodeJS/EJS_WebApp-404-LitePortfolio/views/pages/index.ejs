@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- This is home page -->
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+<!-- DEFAULT HOMEPAGE
+- yksi galleria missä kuvat itsestään vaihtuvat esim. 5-8 kuvaa
+- n. 2-5 projektia näytöllä pelkä kuva tai muu pikainen selostus
+
+- pikainen sosiaali media linkkit & icons, copyright & ehkä yhteystiedot
+-->
+
+<!-- valikkot home/about / ja jne-->
+<main>
+  <div class="jumbotron">
+    <h1>Something Noice</h1>
+    <p>EJS WebApplications</p>
+
+    <h2>Variable</h2>
+    <p><%= tagline %></p>
+
+    <ul>
+      <% mascots.forEach(function(mascot) { %>
+        <li>
+          <strong><%= mascot.name %></strong>
+          representing <%= mascot.organization %>,
+          born <%= mascot.birth_year %>
+        </li>
+      <% }); %>
+    </ul>
+
+  </div>
+
+<!-- Automaatinen galleria show  -->
+  <div class="jumbotron">
+    <h3>Automaatinen galleria </h3>
+      <%- include('../partials/galleryIndex');%>
+  </div>
+</main>
+
+<!-- Copyright homma-->
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+
+</body>
+</html>
