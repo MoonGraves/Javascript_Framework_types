@@ -1,0 +1,42 @@
+{
+  "user10": {
+    "name": "mahesh",
+    "password": "password1",
+    "profession": "teacher",
+    "id": 10
+  },
+  "user20": {
+    "name": "suresh",
+    "password": "password2",
+    "profession": "librarian",
+    "id": 20
+  },
+  "user30": {
+    "name": "ramesh",
+    "password": "password3",
+    "profession": "clerk",
+    "id": 30
+  },
+
+  "user1": {
+    "id": 1,
+    "name": "Kristel",
+    "softwares": "It",
+    "country": "Indonesia"
+  },
+  "user2": {
+    "id": 2,
+    "name": "Katee",
+    "type": "zxcv",
+    "softwares": "Voyatouch",
+    "country": "Belarus"
+  },
+  "user3": {
+    "id": 3,
+    "name": "Killie",
+    "type": "asdf",
+    "softwares": "Ventosanzap",
+    "country": "Canada"
+  }
+
+}
