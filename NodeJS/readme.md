@@ -6,14 +6,14 @@ käynnissä oleva sovelluksen ladattujen paketin versiot, että mitä kaikea sis
 
 <h3> Tässä on lisätty RESTful protokollan toiminta </h3>
 <p> Restful kautta voidaan kuin suorittaa monipuolisia rajapintoja mm . </p>
-<li>
- <ul>suorituskyky</ul>
- <ul>skaalautuvuus</ul>
- <ul>yksinkertaistaminen</ul>
- <ul>muunnos</ul>
- <ul>siirto</ul>
- <ul>luotettavuus</ul>
-</li>
+<ul>
+ <li>suorituskyky</li>
+ <li>skaalautuvuus</li>
+ <li>yksinkertaistaminen</li>
+ <li>muunnos</li>
+ <li>siirto</li>
+ <li>luotettavuus</li>
+</ul>
 
 <p>Helpoin tapa on, että lukaista, muokkaus, poisto ja lukemea api tiedostoa. API sisällä on monipuolisia formaatteja, jopa kuin tietokannan syvemmän yksityiskohtaiset tiedot</p>
 
