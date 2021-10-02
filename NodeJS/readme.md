@@ -4,6 +4,19 @@
 sekä pieni txt jotakin npm latausta, poistoa ja version paketin tarkistus & voidaan lisäksi ladata
 käynnissä oleva sovelluksen ladattujen paketin versiot, että mitä kaikea sisällä on
 
+<h3> Tässä on lisätty RESTful protokollan toiminta </h3>
+<p> Restful kautta voidaan kuin suorittaa monipuolisia rajapintoja mm . </p>
+<li>
+ <ul>suorituskyky</ul>
+ <ul>skaalautuvuus</ul>
+ <ul>yksinkertaistaminen</ul>
+ <ul>muunnos</ul>
+ <ul>siirto</ul>
+ <ul>luotettavuus</ul>
+</li>
+
+<p>Helpoin tapa on, että lukaista, muokkaus, poisto ja lukemea api tiedostoa. API sisällä on monipuolisia formaatteja, jopa kuin tietokannan syvemmän yksityiskohtaiset tiedot</p>
+
 <h3> Osa näissä harjoituksissa on jotakin tuntematomia sivustoja käytetty eli pelkä kuva: </h3>
 <b> Tässä on esim muutama linkki:: </b><br>
 https://www.postman.com/
