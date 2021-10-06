@@ -103,15 +103,30 @@ try {
     console.log(err);
   }
 
-const newObject = {
+const newObject = 
+{
   name: 'Newbie Corp',
   order_count: 123,
-  address: 'Some box Way',
+  address: 'Some Road Way',
   city: 'LA',
-  phone: {
+  phones: {
     office : "office num: 464-676-4539",
-    home: "home num: 168-594-4511"
+    user : {
+    home: "home num: 168-594-4511",
+    mobile: "mobile: +000 123-456-7890"
+    },
+
+    fax: "fax num: 0147-8520-963"
+  },
+
+  company: {
+    name: 'XY company',
+    country : {
+      name : 'Canada',
+      city: 'Ottawa'
+    }
   }
+
 }
 
 //käsittelee tuota toista json dataa (newObject) jokaista objektia erikseen
@@ -119,14 +134,19 @@ const jsonString2 = JSON.stringify(newObject);
 const jsonString2Parse = JSON.parse(jsonString2);
 console.log("\n" + jsonString2Parse.address);
 
-console.log(jsonString2Parse.phone.office);
+//output officen number
+console.log('Käyttäjän puhelin: ' + jsonString2Parse.phones.user.mobile); 
+console.log(jsonString2Parse.city);
+
+//output this object informations about company
+console.log('Toinen yritys sijaitsee: ' + jsonString2Parse.company.country.name + ' , ' + jsonString2Parse.company.country.city);
 
 /*
 output::
-Texas
-
-Some box Way
-office num: 464-676-4539
+Some Road Way
+Käyttäjän puhelin: mobile: +000 123-456-7890
+LA
+Toinen yritys sijaitsee: Canada , Ottawa
 */
 
 ///////////////////////////////
