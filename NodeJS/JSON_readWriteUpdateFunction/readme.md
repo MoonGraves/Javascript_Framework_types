@@ -10,13 +10,28 @@ ja syvemmän tekijää, että tiedettäisi mitä sisällä halutaan kuin tulosta
   <li>JSON.parse</li>
 </ul>
 
-esim) lukaistaisi tämä json tiedosto, ja parse:sta valitaan se tekijä objekti esim. tulostettaisi <i> "address"</i> <br>
+esim 1) lukaistaisi tämä json tiedosto, ja parse:sta valitaan se tekijä objekti esim. tulostettaisi <i> "address"</i> <br>
 { <br>
   "name": "John Dae", <br>
   "order_count": 86, <br>
   "address": "Qwerty Loop Drive", <br>
   "city": "Home" <br>
 }<br>
+
+esim2) <br>
+{ <br>
+  "name": <br>
+  {  <br>
+   "first" : "Mike", <br>
+   "last": "Hill" <br>
+  },
+  "id" : 123, <br>
+  "lives" : { <br>
+    "country" : "Canada", <br>
+    "city" : "Ottawa" <br>
+  }
+  
+}
 
 <h2>PS: </h2> 
 <h3> tässä voi olla jotakin toistuu edellisen harjoituksen nodejs scriptin sovelluksiin... </h3>
