@@ -1,6 +1,14 @@
 //Tässä muutama esimerkki js funktiosta, että kuinka lukaisee json tiedoston ja output, mitä ne tulostaa siinä komentolähteessä
 //Osassa saattaa olla melko sama methodi, mutta toiminnaltaan oikea suunta & sekä erillisenä määritettään objekti tekijä, että mitä tiettyä halutaan kuin lukaista ja nähdä komentolähteessä 
 
+/* JSON read, write & update notes::
+JSON.stringify tarkoittaa: methodin muuntamista javascript:ssä, että objektin tai numeron json merkkijonoksi ja korvaa valinnaisesti arvoa
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+
+JSON.parse tarkoittaa: menetelmä jäsentää JSOn-merkijonoa ja muodostaa merkkijonon kuvaamista javascript arvoa tai objektia. Valinnaisen elvytystoiminnossa voi tarjota suorittamia muunnosta tuloksen olevia objektille ennen sen palautumista.
+*/
+
 //TODO type 1
 const fs = require("fs");
 
@@ -91,7 +99,7 @@ Texas
 
 
 ///////////////////////////////
-//TODO type 5
+//TODO type 5 & uusi objekti
 const fs = require("fs");
 
 try {
@@ -103,10 +111,11 @@ try {
     console.log(err);
   }
 
+//uusi objekti
 const newObject = 
 {
   name: 'Newbie Corp',
-  order_count: 123,
+  id_count: 123,
   address: 'Some Road Way',
   city: 'LA',
   phones: {
@@ -122,31 +131,38 @@ const newObject =
   company: {
     name: 'XY company',
     country : {
-      name : 'Canada',
-      city: 'Ottawa'
+      name : 'US',
+      city: [ ["NY"], ["Vegas"], ["Texas"], ["Los Angeles"], ["Miami"], ["Washington"], ["New Orleans"], ["Chicago"], ["Boston"] ]
     }
   }
 
-}
+};
 
 //käsittelee tuota toista json dataa (newObject) jokaista objektia erikseen
 const jsonString2 = JSON.stringify(newObject);
 const jsonString2Parse = JSON.parse(jsonString2);
-console.log("\n" + jsonString2Parse.address);
+console.log("\n \nsecond object parameters:: \n" + jsonString2Parse.address);
 
 //output officen number
 console.log('Käyttäjän puhelin: ' + jsonString2Parse.phones.user.mobile); 
 console.log(jsonString2Parse.city);
 
-//output this object informations about company
+//output this object informations about XY company, right locations country and city where company got the office for example miami, washington and ect.
 console.log('Toinen yritys sijaitsee: ' + jsonString2Parse.company.country.name + ' , ' + jsonString2Parse.company.country.city);
+
+//valitaan json sisäisen datan random/satunnaisen city-objektin
+const randomCity = jsonString2Parse.company.country.city[Math.floor(Math.random() * jsonString2Parse.company.country.city.length)];
+console.log(randomCity); //output the random city
 
 /*
 output::
+second object parameters::
 Some Road Way
 Käyttäjän puhelin: mobile: +000 123-456-7890
 LA
-Toinen yritys sijaitsee: Canada , Ottawa
+
+Toinen yritys sijaitsee: US , NY,Vegas,Texas,Los Angeles,Miami,Washington,New Orleans,Chicago,Boston
+[ 'Miami' ]
 */
 
 ///////////////////////////////
