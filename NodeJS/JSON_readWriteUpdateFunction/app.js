@@ -24,7 +24,7 @@ try {
   }
   
 /*
-output::
+output::::::::::::::::::::
 Texas
 
 */  
@@ -41,7 +41,7 @@ fs.readFile("./customer.json", "utf8", (err, jsonString) => {
   console.log("File data:", jsonString);
 });
 /*
-output::
+output:::::::::::
 File data: {
   "name": "Mega Corp.",
   "order_count": 83,
@@ -63,7 +63,7 @@ fs.readFile("./customer.json", "utf8", (err, jsonString) => {
 });
 
 /*
-output::
+output:::::::::::
 Infinity Loop Drive
 Texas
 
@@ -92,7 +92,7 @@ fs.readFile("./customer.json", "utf8", (err, jsonString) => {
 });
 
 /*
-output::
+output:::::::::::
 Infinity Loop Drive
 Texas
 */
@@ -132,7 +132,7 @@ const newObject =
     name: 'XY company',
     country : {
       name : 'US',
-      city: [ ["NY"], ["Vegas"], ["Texas"], ["Los Angeles"], ["Miami"], ["Washington"], ["New Orleans"], ["Chicago"], ["Boston"] ]
+      city: [ ["NY"], ["Vegas"], ["Texas"], ["Los Angeles"], ["Miami"], ["Washington"], ["New Orleans"], ["Chicago"], ["Boston"], ["Houston"], ["Seattle"], ["Austin"], ["Dallas"], ["Denver"], ["Nashville"], ["Atlanta"] ]
     }
   }
 
@@ -152,10 +152,10 @@ console.log('Toinen yritys sijaitsee: ' + jsonString2Parse.company.country.name 
 
 //valitaan json sisäisen datan random/satunnaisen city-objektin
 const randomCity = jsonString2Parse.company.country.city[Math.floor(Math.random() * jsonString2Parse.company.country.city.length)];
-console.log(randomCity); //output the random city
+console.log(randomCity); //output one random city of array lists
 
 /*
-output::
+output:::::::::::
 second object parameters::
 Some Road Way
 Käyttäjän puhelin: mobile: +000 123-456-7890
@@ -164,6 +164,31 @@ LA
 Toinen yritys sijaitsee: US , NY,Vegas,Texas,Los Angeles,Miami,Washington,New Orleans,Chicago,Boston
 [ 'Miami' ]
 */
+
+/////////////////////////////////////////////////
+//TODO type 5.1
+//tämä jatkuu edelliseen 5 tehtävään/harjotukseen, mutta kaupunki osat pysyvät ennallaan ja tässä yritettään käyttä for loop - methodia ja toisteen useampi kuin yksi randomi kaupunki
+
+//testi for loop + random (for loop, että toistetaan jotakin x-kertaa ja jne & sama tässä käytettään JSON-parsea) CHEKCH TODO 5)
+for (let ranCityName = 0; ranCityName < 5; ranCityName++) {
+  const randomCity2 = jsonString2Parse.company.country.city[Math.floor(Math.random() * jsonString2Parse.company.country.city.length)];
+  console.log("\nKaupunki: " + randomCity2)
+}
+
+
+/*
+output:::::::::
+Kaupunki: New Orleans
+
+Kaupunki: Vegas
+
+Kaupunki: Chicago
+
+Kaupunki: Chicago
+
+Kaupunki: Austin
+*/
+
 
 ///////////////////////////////
 //TODO type 6
@@ -175,7 +200,7 @@ let student = JSON.parse(rawdata);
 console.log(student);
 
 /*
-output::
+output:::::::::::
 { name: 'Mega Corp.', order_count: 83, address: 'Infinity Loop Drive' }
 */
 
@@ -215,7 +240,7 @@ jsonReader("./customer.json", (err, customer) =>
 });
 
 /*
-output::
+output:::::::::::
 Infinity Loop Drive
 */
 
