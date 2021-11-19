@@ -85,7 +85,7 @@ try {
 
   console.log(typeof appJSONParse + "-------");
 
-  //TODO-2: toistettaan rajoitettu määrä ja random id määrä
+  //TODO-2: toistettaan rajoitettu määrä ja random id määrä & vähä kuin "range", mutta for-loop riittää & tässä toistettaan/haetaan kolme rando käyttäjää/objektia
   for (let i = 0; i < 3; i ++ )
   {
     console.log(appJSONParse[Math.floor(Math.random() * appJSONParse.length)]);
@@ -128,8 +128,3 @@ object-------
   App: 'Transcof'
 }
 */
-
-
-
-
-
