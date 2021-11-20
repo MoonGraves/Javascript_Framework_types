@@ -32,6 +32,16 @@ https://www.mockaroo.com/
   <li>Structure</li>
   <li>Array</li>
  </ul>
+ 
+ <b>Pieni kuvaus JSON sisäisen datan lukemisesta</b>
+ ![Alt text](JSON_example.PNG?raw=true "None")
+ 
+ <b>JSON structure muodossa </b>
+ ![Alt text](JSON_structure.PNG?raw=true "None")
+ 
+ <b>JSON array muodossa</b>
+ ![Alt text](JSON_array.PNG?raw=true "None")
+
 
 <h3>Tässä sisältyen on tuttu mongodb, joku tietokanta vastaava dokumenttitietokantaohjelmisto </h3>
 Mutta sitäkin on erillisenä harjoituksessa/projektissa, ja pientä editointia & osassa jotakin toimii ja jotakin ei <br>
