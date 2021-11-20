@@ -21,10 +21,17 @@ käynnissä oleva sovelluksen ladattujen paketin versiot, että mitä kaikea sis
 <b> Tässä on esim muutama linkki:: </b><br>
 https://www.postman.com/
 <br><hr>
-<b> random json tiedoston luominen </b> <br>
+<h3> random json tiedoston luominen </h3> <br>
 Teossa pitää vähä huomioida, että minkä tiedosto tyyppin lataa, koska voi käyttää mm. excel, json, xml, SQL ja jne. mitä tällä sivustolla on tarjolla.
 Lisäksi "rows" tarkoittaa monta tyypistä tätä objektia halutaan kuin tulostaa/tehdä esim. yhdelle henkilöllä on etu- ja sukunimi, sposti, gender, id-tunnus, ipv4 ja jne...
 https://www.mockaroo.com/
+
+<br><h3>JSON formaattit<h3>
+ JSON formaati tyyppisiä on monta, mutta simppelin mennään "array" ns. taulukko muodosossa tai muu rakenne muodossa. 
+ <ul>
+  <li>Structure</li>
+  <li>Array</li>
+ </ul>
 
 <h3>Tässä sisältyen on tuttu mongodb, joku tietokanta vastaava dokumenttitietokantaohjelmisto </h3>
 Mutta sitäkin on erillisenä harjoituksessa/projektissa, ja pientä editointia & osassa jotakin toimii ja jotakin ei <br>
