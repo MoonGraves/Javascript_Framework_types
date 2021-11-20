@@ -3,8 +3,10 @@
 Tässä vähä kerrotaan muutama nodejs funktiota ja parametriä, että kuinka voidaan tulostaa json tiedoston polkua ja tämä tiedosto on kuin olemassa.
 Erillisenä, vähä tutustutaan <b> json tiedoston kirjoittamista, päivitystä ja jne </b> jokaisen toiminassa vähä kulkeutuu eri methodi, mutta toiminta on melko sama..
 
-Tässä sisältyy pari json funktiota mitkä kuin yritettään käsittellä sitä tiedosto json:ta, 
+Tässä sisältyy muutama json funktion formaatti, mitkä kuin yritettään käsittellä sitä tiedosto json:ta, 
 ja syvemmän tekijää, että tiedettäisi mitä sisällä halutaan kuin tulostaa.
+
+esim. tiedoston sisäisen yrityksen yhteistiedot a-paikkan osoite tai b-paikkan osoie ja yms.
 <ul> 
   <li>JSON.stringify</li>
   <li>JSON.parse</li>
