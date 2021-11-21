@@ -33,13 +33,13 @@ https://www.mockaroo.com/
   <li>Array</li>
  </ul>
  
- <b>Pieni kuvaus JSON sisäisen datan lukemisesta</b>
+ <b>Pieni kuvaus JSON sisäisen datan lukemisesta</b><br>
  ![Alt text](JSON_example.PNG?raw=true "None")
  
- <b>JSON structure muodossa </b>
+ <b>JSON structure muodossa </b><br>
  ![Alt text](JSON_structure.PNG?raw=true "None")
  
- <b>JSON array muodossa</b>
+ <b>JSON array muodossa</b><br>
  ![Alt text](JSON_array.PNG?raw=true "None")
 
 
