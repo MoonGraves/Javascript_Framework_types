@@ -21,7 +21,7 @@ käynnissä oleva sovelluksen ladattujen paketin versiot, että mitä kaikea sis
 <b> Tässä on esim muutama linkki:: </b><br>
 https://www.postman.com/
 <br><hr>
-<h3> random json tiedoston luominen </h3> <br>
+<h3> Random json tiedoston luominen </h3> <br>
 Teossa pitää vähä huomioida, että minkä tiedosto tyyppin lataa, koska voi käyttää mm. excel, json, xml, SQL ja jne. mitä tällä sivustolla on tarjolla.
 Lisäksi "rows" tarkoittaa monta tyypistä tätä objektia halutaan kuin tulostaa/tehdä esim. yhdelle henkilöllä on etu- ja sukunimi, sposti, gender, id-tunnus, ipv4 ja jne...
 https://www.mockaroo.com/
