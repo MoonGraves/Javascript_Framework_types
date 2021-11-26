@@ -9,6 +9,12 @@ Express eli verkkosivustossa hyödynnettään ejs, mikä pohjautuu html toiminta
 Esim. tällainen JSON tiedostoa::
 <br>
 
+Syntaksissa tapahtuu toimintoja eli nämä: <%%>
+<%%> - scripti tag, kontrolli, ohjausvirta, ja ei tulosta
+<%= %> - tulostaa arvon mallin (HTML - koodattu)
+<%- %> - tulostaa arvon, jossa ei ole koodimerkkiiä, malliin
+
+
 <b>Että esim yritettäisi tulostaa verkkosivustossa mm. otsikko ja nimet listattuna</b>
 
 <b>Default ejs home page with json data object </b>
