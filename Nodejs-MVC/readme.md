@@ -7,6 +7,10 @@ Tämän MVC:n kanssa käytetään graafisten käyttöliittymien suunnittelussa, 
 
 MVC -osat jakautuu kolmeen osaan eli malliin, näkymään ja käsittelijään.
 
+<b>Oletus sivusto ja simulaatio: <br>
+https://swagger.io/tools/swagger-ui/<br>
+https://petstore.swagger.io/?_ga=2.66482092.386485284.1637909015-282128346.1637909015<br>
+
 <ul>
   Nämä kolme kulkevat kuin ympäritse kolmiona tai neliönä sisältyen käyttäjä/asiakkaan käyttö henkilö <br>
   <li>malli <b>(model)</b> , kuvaa järjestelmän tiedon tallentamista, ylläpitoa ja käsittelee tietokantavuutta </li>
