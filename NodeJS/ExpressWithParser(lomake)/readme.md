@@ -14,12 +14,12 @@ että cmd/konsolissa näkyy se viesti mikä käyttäjä on näppytännyt
 - Lisäs lisätty kuin order tiedosto , vähä kuin sama lomake liitettään samaan kansion --> tiedosto .txt & toki erillisenä muodostuu .json tiedosto
 esim. lomake täydentyy samaaan .txt ja erilisenä oma .json, jos yhtäkkiä täydentää uuden saman mitä täydentyy perään saman .txt perään, toki tiedoston pakettia voi muuttaa json:ksi
 
-![Alt text](images/NodeJs1.PNG?raw=true "None")
-![Alt text](images/NodeJs2.PNG?raw=true "None")
-![Alt text](images/NodeJs2-1.PNG?raw=true "None")
-![Alt text](images/NodeJs2-2.PNG?raw=true "None")
-![Alt text](images/NodeJs2-3.PNG?raw=true "None")
-![Alt text](images/NodeJs3.PNG?raw=true "None")
-![Alt text](images/NodeJs5.PNG?raw=true "None")
-![Alt text](images/NodeJs5-1.PNG?raw=true "None")
-![Alt text](images/NodeJs4.PNG?raw=true "None")
+![Alt text](images/NodeJs1.PNG?raw=true "None") <br> 
+![Alt text](images/NodeJs2.PNG?raw=true "None") <br>
+![Alt text](images/NodeJs2-1.PNG?raw=true "None") <br>
+![Alt text](images/NodeJs2-2.PNG?raw=true "None") <br>
+![Alt text](images/NodeJs2-3.PNG?raw=true "None") <br>
+![Alt text](images/NodeJs3.PNG?raw=true "None") <br>
+![Alt text](images/NodeJs5.PNG?raw=true "None") <br>
+![Alt text](images/NodeJs5-1.PNG?raw=true "None")  <br>
+![Alt text](images/NodeJs4.PNG?raw=true "None") <br>
