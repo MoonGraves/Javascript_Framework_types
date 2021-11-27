@@ -36,4 +36,5 @@ esim2) <br>
 }
 
 <h2>PS: </h2> 
-<h3> tässä voi olla jotakin toistuu edellisen harjoituksen nodejs scriptin sovelluksiin... </h3>
+<h3> tässä voi olla jotakin toistuvia edellisen harjoituksen nodejs scriptin sovelluksiin... </h3>
+Myös sisältyy javascript toimintoja
