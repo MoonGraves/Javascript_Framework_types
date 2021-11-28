@@ -8,7 +8,7 @@ sitä käytettään työkalua ohjelmistotyökalun kanssa RESTful verkkopalvelun 
 Käyttäjä/asiakas/tekijä voi kuin lukaista, julkaista, poistaa tai jättää tiedoston, ja API vastaanottaa/julkaisee ja siitä jatkuu kohti tietokantaan,
 Tässä ohjelmisto sisältyy automaatioidun dokumentaation , koodien generaattori (useille ohjelmointikielelle) ja testitapauksen generaattoriin
 
-Ainii jokaisen näissä kansion sisällä toi readme.md on päiväys, että milloin nämä ohjelmat on luotu
+Ainii jokaisen näissä kansion sisällä toi readme.md on päiväys, että milloin nämä ohjelmat on luotu & pientä päivitystäkin ehkä tulee tulevaisuudessa olemaan ja muuta editointia
   
 ![Alt text](SwaggerJS-1.PNG?raw=true "None")
 
