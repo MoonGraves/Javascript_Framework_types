@@ -1,0 +1,141 @@
+{
+  "CompanyTitle": "Companies oy",
+  "Companies": [
+    {
+      "id": 1,
+      "companyName": "Devify",
+      "email": "cwalthall0@salon.com",
+      "location": "China",
+      "city": "Guicheng",
+      "ip_address": "117.122.224.159"
+    },
+    {
+      "id": 2,
+      "companyName": "Dynazzy",
+      "email": "talforde1@pagesperso-orange.fr",
+      "location": "Indonesia",
+      "city": "Kalde Panga",
+      "ip_address": "78.142.184.193"
+    },
+    {
+      "id": 3,
+      "companyName": "Vipe",
+      "email": "cgrenkov2@angelfire.com",
+      "location": "China",
+      "city": "Dongchengyuan",
+      "ip_address": "140.242.29.116"
+    },
+    {
+      "id": 4,
+      "companyName": "Yacero",
+      "email": "ceddis3@comsenz.com",
+      "location": "China",
+      "city": "Chengxi",
+      "ip_address": "54.236.114.164"
+    },
+    {
+      "id": 5,
+      "companyName": "Yotz",
+      "email": "jbeddoe4@ycombinator.com",
+      "location": "China",
+      "city": "Nan’an",
+      "ip_address": "171.82.4.146"
+    },
+    {
+      "id": 6,
+      "companyName": "Linkbridge",
+      "email": "adavana5@redcross.org",
+      "location": "Japan",
+      "city": "Tarui",
+      "ip_address": "149.92.253.35"
+    },
+    {
+      "id": 7,
+      "companyName": "Thoughtworks",
+      "email": "kduchatel6@china.com.cn",
+      "location": "China",
+      "city": "Qingliu",
+      "ip_address": "190.246.127.35"
+    },
+    {
+      "id": 8,
+      "companyName": "Divanoodle",
+      "email": "bleport7@flavors.me",
+      "location": "Philippines",
+      "city": "Bitaogan",
+      "ip_address": "36.254.146.98"
+    },
+    {
+      "id": 9,
+      "companyName": "Realcube",
+      "email": "srodders8@networkadvertising.org",
+      "location": "Indonesia",
+      "city": "Sugiharjo",
+      "ip_address": "200.203.56.69"
+    },
+    {
+      "id": 10,
+      "companyName": "Aibox",
+      "email": "ckeam9@tinypic.com",
+      "location": "Philippines",
+      "city": "Mahaba",
+      "ip_address": "116.129.192.135"
+    },
+    {
+      "id": 52,
+      "companyName": "Avavee",
+      "email": "abryett1f@flickr.com",
+      "location": "Brazil",
+      "city": "Conceição do Jacuípe",
+      "ip_address": "117.6.127.108"
+    },
+    {
+      "id": 53,
+      "companyName": "Kazu",
+      "email": "mdreigher1g@google.com",
+      "location": "Canada",
+      "city": "Alma",
+      "ip_address": "236.139.55.194"
+    },
+    {
+      "id": 54,
+      "companyName": "BlogXS",
+      "email": "klassell1h@samsung.com",
+      "location": "Chile",
+      "city": "San Vicente",
+      "ip_address": "22.165.176.97"
+    },
+    {
+      "id": 55,
+      "companyName": "Skyvu",
+      "email": "marnaldo1i@wix.com",
+      "location": "Costa Rica",
+      "city": "La Virgen",
+      "ip_address": "241.214.151.123"
+    },
+    {
+      "id": 56,
+      "companyName": "Talane",
+      "email": "ppointin1j@scientificamerican.com",
+      "location": "Poland",
+      "city": "Grzęska",
+      "ip_address": "42.246.44.106"
+    },
+    {
+      "id": 57,
+      "companyName": "Zoombeat",
+      "email": "emargrie1k@csmonitor.com",
+      "location": "Greece",
+      "city": "Stratónion",
+      "ip_address": "136.22.170.87"
+    },
+    {
+      "id": 58,
+      "companyName": "Avamba",
+      "email": "eserrels1l@issuu.com",
+      "location": "Philippines",
+      "city": "Bailan",
+      "ip_address": "78.42.28.18"
+    }
+  ]
+}
