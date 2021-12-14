@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  
+<body>
+    <h3> 
+        <%= authorData.name %>
+    </h3>
+  
+    <ul>
+        <% authorData.skills.forEach((skill)=>{%>
+              <li><%=skill%></li> 
+        <% }); %>
+    </ul>
+
+     
+</body>
+</html>
