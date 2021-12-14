@@ -15,8 +15,9 @@ const ejs = require('ejs');
 app.set('view engine', 'ejs');
 app.use(cookieParser());
 
-//lukaisee/käsittelee olemassa olevan kansion ja sisäisen tiedoston json muodon & ja ejs kohdassa pitää määrittää sama tekijä, että tämä on kuin kohde osoite
+//lukaisee/käsittelee olemassa olevan kansion ja sisäisen tiedoston JSON muodon & ja ejs kohdassa pitää määrittää sama tekijä, että tämä on kuin kohde osoite & keksi jotakin companyList:lle
 app.locals.classUsers = require('./data/users.json');
+app.locals.companyList = require('./data/comp.json');
 
 //configure our express instance with some body-parser settings
 //including handling JSON datas
@@ -25,7 +26,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //TODO:: JSON formaatti url linkki
 const urlData = "https://jsonplaceholder.typicode.com/posts/2"
-
 
 request({
     url: urlData,
@@ -42,18 +42,27 @@ app.get("/about", (req, res ) => {
   res.render("about");
 });
 
-
-const authorData = {
+const authorData = 
+{
     name : 'Some Title',
-    skills: ['HTML5', 'Nodejs', 'Mongodb', 'Linux', 'Cisco']
+    skills: ['HTML5', 'Nodejs', 'Mongodb', 'Linux', 'Cisco', 'Adobe', 'Autodesk', 'JavaScript', 'Php', 'C#', 'C++' , 'Python' , 'Matlab', 'Reach', 'Threejs', 'Jquery', 'Django', 'Android', 'Kotlin', 'IOS'],
 };
 
-app.get("/main", (req, res ) => {
-  res.render("main" , { authorData: authorData} );
+//oma main polku & toistaa authorData sisäisen json parametrit
+app.get("/main", function (req, res ) {
+  res.render("main" , { authorData: authorData } );
 });
-
 //consider routes path folder/files, it will set to default home page
 const routes = require('./routes/routes.js')(app, fs);
+
+const jsonAuthorData = JSON.stringify(authorData);
+const jsonAuthor2Data = JSON.parse(jsonAuthorData);
+
+for (let randomSkill = 0; randomSkill < 5; randomSkill++ ) {
+  const randomSkillName = jsonAuthor2Data.skills[Math.floor(Math.random() * jsonAuthor2Data.skills.length)];
+
+  console.log("skillit:" + randomSkillName);
+};
 
 //set server running and port number
 const server = app.listen(8080, () => {
