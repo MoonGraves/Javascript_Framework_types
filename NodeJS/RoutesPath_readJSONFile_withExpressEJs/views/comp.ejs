@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>Comp EJS</title>
+  <!-- kansion data/comp.json sisäisen datat/ominaisuuden juttut julkaistuu html sivustoon ja näkee niitä parametriä/objektia esim. kuin käyttäjän ominaisuutta oiski puh, osoite ja muuta tärkeettä infoa. 
+  
+  Ennen sitä pitää pääsovelluksen index.js sisällä määrittää jotakin määritystä. Siellä lukee "classUsers" - kuin tekijänsä, ja tuodaan jotakin esille, että määrittää ominaisuuden polku parametrin -->
+
+  <!-- Compiled and minified CSS & editointia-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </head>
+
+<body>
+
+<!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <h2> Company page </h2>  
+  <h3> This is company file </h3>
+  <p><a href="<%= link %>">Home</a></p> 
+
+  <!--Tänne toistuu for-loop komento, mikä sama kuin index.ejs siellä toistetaan sitä json sisäisen formaattin parametrit, ja pääsovellusessa määritetiin app.locals.companyList = require('./data/comp.json'); -->
+
+  <h4><%= companyList.CompanyTitle %> </h4>
+  <p>
+  <% companyList.Companies.forEach(function(item) { %>
+  <li> <%= item.companyName + "\t" + item.ip_address %>
+  </li> <% }); %>
+  </p>
+
+  <hr>
+  
+  <h4>asdf range & for-loop määrä</h4>
+  <% %>
+
+</body>
+</html>
