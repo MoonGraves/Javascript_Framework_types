@@ -10,5 +10,9 @@ localhost:8080/index.html/:id     - GET
 localhost:8080/index.html/:id     - DELETE
 localhost:8080/index.html/:index  - PUT
 
-![Alt text](images/CRUD-1.PNG?raw=true "None")
+![Alt text](images/CRUD-1.PNG?raw=true "None") <br>
+
+![Alt text](images/api_method.PNG?raw=true "None")
+<br>
+
 ![Alt text](images/Client-REST_API-Database.PNG?raw=true "None")´
