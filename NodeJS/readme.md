@@ -61,3 +61,18 @@ Tässä ei ihan kaikkia ole, mutta jotakin pientä muistikuvaa ehkä saattaa her
  <li> https://overapi.com/nodejs </li> 
   
   </ul>
+
+ <h2>JSON dataa ja rakennetta mitä voi kokeilla</h2>
+ 
+ Javascript framework kautta, että lukaisee linkkin sisäisen tietokannan ja analysoi, jotta tulosttaa määrityn tekijänsä. Myös muu api datat.
+ 
+https://jsonplaceholder.typicode.com/users/ <br>
+https://jsonplaceholder.typicode.com/posts/ <br>
+https://petstore.swagger.io/v2/swagger.json <br>
+https://www.reddit.com/r/popular.json <br>
+https://jsonplaceholder.typicode.com/comments <br>
+https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=3a3188bfc5bb7c5d2eff1a4985214289 <br>
+https://documenter.getpostman.com/view/10808728/SzS8rjbc <br>
+https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/ <br>
+ 
+ 
