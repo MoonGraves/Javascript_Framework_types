@@ -1,0 +1,149 @@
+Koodi pätkä tulee olemaan html,css & js kanssa, mutta tarkoituskena olla <body> </body> sisällä.
+
+
+Tämä on sen kirjasto, joka tulee olemaan joko erillisenä tai yhdistettynä perinteisen script.js kanssa.
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<!--Angular kirjasto-->
+
+-----------------------------------------------------------------------
+
+<p>Input something in the input box:</p>
+<p>Name: <input type="text" ng-model="name1"></p>
+<p ng-bind="name1"></p>
+
+<p>Numbers: <input type="number" ng-model="number"></p>
+<p ng-bind="number"></p>
+
+-----------------------------------------------------------------------
+
+<div ng-app="Input1" ng-controller="Output1">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+<script>
+var app = angular.module('Input1', []);
+app.controller('Output1', function($scope) {
+    $scope.firstName= "First";
+    $scope.lastName= "Last";
+});
+</script>
+
+-----------------------------------------------------------------------
+
+<div ng-app="Math">
+<p>Math examples: 5 + 2 = {{ 5+12 }} <br>
+  50 - 123 = {{ 50-123 }} </p>
+
+<p> Math2 Exmaples: 2 / 3 = {{ 2 / 3 }} <br>
+175 * 3 = {{ 175*3 }}
+</p>
+</div>
+
+-----------------------------------------------------------------------
+
+<div ng-app="">
+
+  <div>
+       <span>Enter name : </span><input type='text' ng-model='UusNimi'>
+   </div>
+
+    <div>
+        <span>Valitse safkas : </span>
+        <select ng-model='safkat'>
+        <option value='Hamppari'>Hamppari</option>
+        <option value='Pizza'>Pizza</option>
+        <option value='Sushi'>Sushi</option>
+        <option value='Subway'>Subway</option>  
+          </select>
+    </div>
+
+    <div>
+          <span>About you : </span><textarea ng-model='about'></textarea>
+    </div>
+
+      Hello {{ UusNimi }}<br/>
+      Food valitsit: <span ng-bind='safkat'></span><br/>
+      About you : {{ about }}
+
+</div>
+
+-----------------------------------------------------------------------
+
+    <table>
+          <tr>
+           <td>Your name : </td>
+           <td><input type="text" ng-model="name"></td>
+          </tr>
+          <tr>
+           <td>Price : </td>
+           <td><input type="text" ng-model="price"></td>
+          </tr>
+          <tr>
+           <td>Number : </td>
+           <td><input type="text" ng-model="num"></td>
+          </tr>
+          <tr>
+           <td colspan='2'>
+             NAME {{ name | uppercase }}<br/>
+             name {{ name | lowercase }}<br/>
+             Price {{ price | currency:'Rs ':2 }}<br/>
+             Number : {{ num | number:2 }}<br/>
+           </td>
+          </tr>
+      </table>
+
+-----------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

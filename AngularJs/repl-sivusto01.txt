@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+  </head>
+
+  <!-- PÄÄ ASIAT
+    >>ng-app: nii kuin <div> tässä tapahtuu jtn </div> asioita, kuin sen id tai funktio/parametri asiat
+
+
+    >>ng-model:: html -objekti, kuin käyttäjä näppyttää jtn (inåut), josta se siirtää sen asianssa seuraavaan laatikkoon (output) esim::
+    <span>Kirjoita jtn : </span><input type='text' ng-model='SeAsia'>
+
+    >>ng-bind:: direktiivi siitoo sovellustiedot html-sivustoon.
+
+    >>ng-init:: direktiivisen muuttuja, eli x on joku luku ja y on jokin luku, josta ei muutetta vain koodin sisälla ja sitä käytettään myös laskuissakin.
+
+    >>> ng-controller:: sitä voidaan sijoittaa ng-app ja ng-model sisään, josta muodostettaan kuin kontrolli systeemi tai sovellus asia, määrittelee ohjelmaa. sisältyen pitää olla script funktio/tekijä, josta ymmärtää sen hommanssa.
+
+   -->
+
+  <!-- ------------------------------------------------- -->
+  
+<body>
+
+  <!--
+  <div ng-app="myLanguageApp">
+  <div ng-controller="languages">
+  Select your Favourite Lanuage :
+  <button ng-click="lang('Php')">PHP</button>
+  <button ng-click="lang('Javascript')">Javascript</button>
+  <button ng-click="lang('Python')">Python</button>
+  <button ng-click="lang('Ruby')">Ruby</button>
+  <button ng-click="lang('C#')">C#</button>
+  <button ng-click="lang('Empty')">Empty</button>
+
+  <p>You have selected : {{ myFavLanguage }}</p>
+  </div>
+ 
+  <script>
+  var application = angular.module('myLanguageApp',[]);
+  application.controller('languages',function($scope){
+    $scope.myFavLanguage = "None";
+    $scope.lang = function(value){
+      $scope.myFavLanguage = value;
+    }
+  });
+  </script>
+  -->
+
+  <!-- ------------------------------------------------- -->
+
+<!--
+<div ng-app="">
+
+  <div>
+       <span>Enter name : </span><input type='text' ng-model='UusNimi'>
+   </div>
+
+    <div>
+        <span>Valitse safkas : </span>
+        <select ng-model='safkat'>
+        <option value='Hamppari'>Hamppari</option>
+        <option value='Pizza'>Pizza</option>
+        <option value='Sushi'>Sushi</option>
+        <option value='Subway'>Subway</option>  
+          </select>
+    </div>
+
+    <div>
+          <span>About you : </span><textarea ng-model='about'></textarea>
+    </div>
+
+      Hello {{ UusNimi }}<br/>
+      Food valitsit: <span ng-bind='safkat'></span><br/>
+      About you : {{ about }}
+
+</div>
+-->
+
+  <!-- ------------------------------------------------- -->    
+<!--
+<div ng-app="">
+<p>Math examples: 5 + 2 = {{ 5+12 }} <br>
+  50 - 123 = {{ 50-123 }}
+
+  Math2 Exmaples: 2 / 3 = {{ 2 / 3 }} <br>
+  175 * 3 = {{ 175*3 }}
+  </p>
+</div>
+-->
+
+  <!-- ------------------------------------------------- -->
+
+<!-- Lausekkeet/ilmaisu;; 
+
+{{ kirjoita jtn tänne }}
+Aaltosuulkeiden sisään tulee se mitä haluttaan ilmaista, mm. jos tavallinen lasku toimitus josta vain suoraan näyttää sen vastauksenssa, mutta jos jotakin teksitä pitää tulla olemaan heittomerkkit eli "jtn", sitten tulostuu se. esim. {{ "firstName" + " " + "lastName" }}
+
+jos ilman <div ng-app> direktiiviä, josta tulostuu kokonainen lause.
+
+-->
+<!--
+<div ng-app="">
+  <p>My first expression: {{ "firstName" + " " + "lastName" }}</p>
+</div>
+
+-->
+
+<!-- ------------------------------------------------- -->
+
+<!-- Numero lasku käyttö mm. pikainen x ja y on jtn. Tässä on esitetty kaksi tapaa tulostaa sen tuloksen.
+Periaateessa sama kuin stringi, että x on jokin nimi tai luku. 
+
+ng-bind nii kuin ymmärtää ng-init sen string tekijänsä, jotta toistaa sen esim. x sen luvun tai nimen
+-->
+
+<!--
+<div ng-app="" ng-init="quantity=1;cost=5; firstName='John'; lastName='Doe'"> -
+
+<p>Total in dollar: {{ quantity * cost }}</p>
+<p>Nimesi on: {{ firstName + " " + lastName}} </p>
+
+
+<p>Total in dollar: <span ng-bind="quantity * cost"></span></p>
+<p>The name is <span ng-bind="firstName + ' ' + lastName"></span></p>
+
+</div>
+-->
+<!-- ------------------------------------------------- -->
+
+<!-- Anguarjs Objektit:: 
+Sama kuin edellinekin eli stringi määrittys, mutta tämä on objekti tyyppinen. Eli määrittyn stringin henkilön nimi halutaan tulosta sen.
+-->
+
+<!--
+<div ng-app="" ng-init="person={firstName:'John',lastName:'Doe'}">
+
+<p>The name is {{ person.lastName }}</p>
+
+<p>The name is <span ng-bind="person.firstName"></span></p>
+
+
+</div> -->
+<!-- ------------------------------------------------- -->
+
+<!-- Array = Taulukko::
+Perus taulukko, ensimmäinen luku on nollana, eli kuin lukujono [0, 1, 2, ja jne]
+-->
+<!--
+<div ng-app="" ng-init="points=[1,15,19,2,40]">
+
+<p>The third result is {{ points[2] }}</p>
+<p>The third result is <span ng-bind="points[4]"></span></p>
+
+</div>-->
+
+<!-- ------------------------------------------------- -->
+
+
+
+
+
+
+  </body>
+</html>

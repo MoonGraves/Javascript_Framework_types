@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+    <!-- AngularJs kirjasto -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+  </body>
+
+  <!--------------------------------------------- -->
+  <!-- Angular Modules-->
+
+
+  <!-- Controllointi & Direktive
+  -->
+  <!--
+  <div ng-app="myApp" ng-controller="myCtrl">
+    {{ firstName + " " + lastName }}
+    </div>
+
+    <script>
+    var app = angular.module("myApp", []);
+    app.controller("myCtrl", function($scope) {
+        $scope.firstName = "John";
+        $scope.lastName = "Doe";
+    });
+</script>-->
+
+<!--
+<div ng-app="myApp1" w3-test-directive></div>
+
+<script>
+var app = angular.module("myApp1", []);
+app.directive("w3TestDirective", function() {
+    return {
+        template : "I was made in a directive constructor!"
+    };
+});
+</script>-->
+
+  <!--------------------------------------------- -->
+  
+  <!--Modules and Controllers in Files:
+  eli kuin lukee luokkan tai toisen tietokannan datan id juttunsa ja hallitsee sitä & sekä toistettaan funktio ja parametrin
+ -->
+
+<!--
+ <div ng-app="IhmeApp" ng-controller="ASDCtrl">
+{{ firstName + " " + lastName + " " + NewName }} <br>
+</div>-->
+
+<!--
+<script src="EkaApp.js"></script>  Siel lukee ng-app id methodin
+<script src="EkaCtrl.js"></script> <!--Siel lukee ng-controllin id, että tulostettavien asiat -->
+<!-- jonka pitäisi tulosta:: pälä bump mikki -->
+
+<!--Alempi on toinen tapa, mutta tämä on paljon nopeampi kuin lukaisee luokkan .js ja jne, ja muut algoritmit -->
+<!--
+<div ng-app="myApp" ng-controller="myCtrl">
+{{ firstName + " " + lastName }}
+</div>
+
+<script>
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope) {
+  $scope.firstName = "John";
+  $scope.lastName = "Doe";
+});
+</script>
+-->
+
+<!--------------------------------------------- -->
+
+<!-- AngularJS Directives 
+Mitä käyttäjä syöttää, nii tulostuu sen mukaan, tos ng-init, firstname sisällä voi olla jtn tekstiäkin valmiina, mutta se tulostuisi sen mukaan oletuksena.
+-->
+<!--
+<div ng-app="" ng-init="firstName=''; lastName=''">
+
+<p>Name: <input type="text" ng-model="firstName"> <input type="text" ng-model="lastName"></p>
+
+<p>You wrote: {{ firstName + " " + lastName }}</p>
+</div>
+-->
+
+<!--Data Binding::
+sama kuin directive, mutta täs numeroituna, että voi scrollaa ne numerot, tokihan sama kuin voidaan syöttää valmiiksi, jotta se laskee pikaisesti
+ -->
+<!--
+<div ng-app="" ng-init="quantity='';price=''">
+
+Quantity: <input type="number" ng-model="quantity">
+Costs:    <input type="number" ng-model="price">
+
+Total in dollar: {{ quantity * price }}
+</div>-->
+
+<!--------------------------------------------- -->
+
+
+</html>
